@@ -1,0 +1,290 @@
+[
+  {
+    "track": "TRACK1",
+    "profile_rows": 10,
+    "top_segments": 71,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 8,
+      "2": 2,
+      "3": 9,
+      "4": 1,
+      "5": 8,
+      "7": 11
+    },
+    "top_second_sum_by_opcode": {
+      "0": 10355,
+      "1": 3200,
+      "2": 200,
+      "3": 1290,
+      "4": 800,
+      "5": 1112,
+      "7": 1530
+    }
+  },
+  {
+    "track": "TRACK2",
+    "profile_rows": 10,
+    "top_segments": 64,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 7,
+      "3": 8,
+      "5": 7,
+      "7": 10
+    },
+    "top_second_sum_by_opcode": {
+      "0": 14260,
+      "1": 1480,
+      "3": 1010,
+      "5": 979,
+      "7": 1090
+    }
+  },
+  {
+    "track": "TRACK3",
+    "profile_rows": 10,
+    "top_segments": 80,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 41,
+      "1": 4,
+      "3": 15,
+      "4": 2,
+      "5": 3,
+      "7": 15
+    },
+    "top_second_sum_by_opcode": {
+      "0": 14430,
+      "1": 909,
+      "3": 1680,
+      "4": 1600,
+      "5": 873,
+      "7": 2080
+    }
+  },
+  {
+    "track": "TRACK4",
+    "profile_rows": 10,
+    "top_segments": 109,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 7,
+      "2": 2,
+      "3": 23,
+      "4": 12,
+      "5": 2,
+      "6": 6,
+      "7": 23,
+      "21": 1,
+      "22": 1
+    },
+    "top_second_sum_by_opcode": {
+      "0": 5273,
+      "1": 1350,
+      "2": 500,
+      "3": 3110,
+      "4": 5900,
+      "5": 300,
+      "6": 2700,
+      "7": 3120,
+      "21": 7,
+      "22": 7
+    }
+  },
+  {
+    "track": "TRACK5",
+    "profile_rows": 10,
+    "top_segments": 103,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 38,
+      "1": 8,
+      "3": 21,
+      "4": 4,
+      "5": 3,
+      "6": 11,
+      "7": 18
+    },
+    "top_second_sum_by_opcode": {
+      "0": 4910,
+      "1": 935,
+      "3": 2330,
+      "4": 2600,
+      "5": 420,
+      "6": 5500,
+      "7": 2210
+    }
+  },
+  {
+    "track": "TRACK6",
+    "profile_rows": 10,
+    "top_segments": 94,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 26,
+      "1": 13,
+      "3": 16,
+      "4": 6,
+      "5": 12,
+      "6": 2,
+      "7": 19
+    },
+    "top_second_sum_by_opcode": {
+      "0": 7850,
+      "1": 4600,
+      "3": 1510,
+      "4": 4300,
+      "5": 1630,
+      "6": 1800,
+      "7": 1690
+    }
+  },
+  {
+    "track": "TRACK11",
+    "profile_rows": 10,
+    "top_segments": 71,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 8,
+      "2": 2,
+      "3": 9,
+      "4": 1,
+      "5": 8,
+      "7": 11
+    },
+    "top_second_sum_by_opcode": {
+      "0": 10355,
+      "1": 3200,
+      "2": 200,
+      "3": 1290,
+      "4": 800,
+      "5": 1112,
+      "7": 1530
+    }
+  },
+  {
+    "track": "TRACK12",
+    "profile_rows": 10,
+    "top_segments": 64,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 7,
+      "3": 8,
+      "5": 7,
+      "7": 10
+    },
+    "top_second_sum_by_opcode": {
+      "0": 14260,
+      "1": 1480,
+      "3": 1010,
+      "5": 979,
+      "7": 1090
+    }
+  },
+  {
+    "track": "TRACK13",
+    "profile_rows": 10,
+    "top_segments": 80,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 41,
+      "1": 4,
+      "3": 15,
+      "4": 2,
+      "5": 3,
+      "7": 15
+    },
+    "top_second_sum_by_opcode": {
+      "0": 14430,
+      "1": 909,
+      "3": 1680,
+      "4": 1600,
+      "5": 873,
+      "7": 2080
+    }
+  },
+  {
+    "track": "TRACK14",
+    "profile_rows": 10,
+    "top_segments": 109,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 32,
+      "1": 7,
+      "2": 2,
+      "3": 23,
+      "4": 12,
+      "5": 2,
+      "6": 6,
+      "7": 23,
+      "21": 1,
+      "22": 1
+    },
+    "top_second_sum_by_opcode": {
+      "0": 5273,
+      "1": 1350,
+      "2": 500,
+      "3": 3110,
+      "4": 5900,
+      "5": 300,
+      "6": 2700,
+      "7": 3120,
+      "21": 7,
+      "22": 7
+    }
+  },
+  {
+    "track": "TRACK15",
+    "profile_rows": 10,
+    "top_segments": 103,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 38,
+      "1": 8,
+      "3": 21,
+      "4": 4,
+      "5": 3,
+      "6": 11,
+      "7": 18
+    },
+    "top_second_sum_by_opcode": {
+      "0": 4910,
+      "1": 935,
+      "3": 2330,
+      "4": 2600,
+      "5": 420,
+      "6": 5500,
+      "7": 2210
+    }
+  },
+  {
+    "track": "TRACK16",
+    "profile_rows": 10,
+    "top_segments": 93,
+    "terminator": true,
+    "top_opcode_counts": {
+      "0": 25,
+      "1": 13,
+      "3": 16,
+      "4": 6,
+      "5": 12,
+      "6": 2,
+      "7": 19
+    },
+    "top_second_sum_by_opcode": {
+      "0": 7930,
+      "1": 4600,
+      "3": 1510,
+      "4": 4300,
+      "5": 1630,
+      "6": 1800,
+      "7": 1690
+    }
+  }
+]
