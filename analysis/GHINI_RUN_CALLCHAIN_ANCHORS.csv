@@ -1,0 +1,6 @@
+literal,physical_file_offset,current_status,next_trace
+data\ghini.run,0x23BE4,string/source anchor,resolve QB string handle/reference into application caller
+PROFILE,0x23C00,string/source anchor,resolve QB string handle/reference into application caller
+Error before PROFILE,0x23C0C,string/source anchor,resolve QB string handle/reference into application caller
+TRACKMAP,0x23C24,string/source anchor,resolve QB string handle/reference into application caller
+Error before TRACKMAP,0x23C30,string/source anchor,resolve QB string handle/reference into application caller

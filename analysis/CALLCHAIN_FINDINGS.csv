@@ -1,0 +1,9 @@
+anchor,role,status,evidence,limitation
+0x19356,runtime dispatcher,CONFIRMED,Indirect dispatch uses stream state at DS:360C and a CS table/vector; AL is derived from [SI+03h].,"Direct callers include 0x17E17, 0x17EB6, 0x19467, 0x1948B, 0x1E5A0, 0x1E6C9."
+0x1E5A0,runtime block read,CONFIRMED,"Caller prepares AX=0x0A04, then calls dispatcher; fallback path calls 0x1944B repeatedly and stores bytes with STOSB.","This is runtime stream reading, not yet proof of Ghini.run parsing."
+0x1E62E,runtime character scanner,CONFIRMED,"Reads characters through 0x1944B, skips delimiters/spaces, and handles quoted/comma input.",Its grammar is generic input handling and should not be labeled the Ghini.run parser.
+0x1E550,runtime input routine,STRONG,Consumes a caller buffer/length and uses runtime stream state; it is adjacent to the block-read path.,No direct data-flow from the ghini.run filename has been established.
+0x1E6C9,runtime dispatch caller,STRONG,Sets AH=0x0E before dispatch; belongs to the same runtime input family.,Not sufficient to identify application-level parsing.
+0x1EA3E,stream-state setup,OPEN,"Writes DS:40C3, a stream-state pointer used by character/block input routines.",Useful anchor for future handle tracing.
+0x1F08A,runtime initialization,STRONG,Initializes DS:360C with 0x6D09; dispatcher later dereferences DS:360C as the vector-table base.,Table contents are populated/relocated at runtime; raw file bytes at the same physical offset are not the runtime table.
+Ghini.run string,application literal/source anchor,CONFIRMED,"String pool contains data\ghini.run, PROFILE, TRACKMAP and their error messages.",Direct immediate xrefs are absent because QB string/runtime indirection is involved.

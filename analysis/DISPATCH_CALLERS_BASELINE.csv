@@ -1,0 +1,7 @@
+call_offset,nearby_AH_assignments,call
+97815,,17e17:	e8 3c 15             	call   0x19356
+97974,"17eb4:	b4 0a                	mov    $0xa,%ah",17eb6:	e8 9d 14             	call   0x19356
+103527,"19465:	b4 10                	mov    $0x10,%ah",19467:	e8 ec fe             	call   0x19356
+103563,"19489:	b4 12                	mov    $0x12,%ah",1948b:	e8 c8 fe             	call   0x19356
+124320,,1e5a0:	e8 b3 ad             	call   0x19356
+124617,"1e6c7:	b4 0e                	mov    $0xe,%ah",1e6c9:	e8 8a ac             	call   0x19356

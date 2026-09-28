@@ -600,3 +600,7 @@ esses valores até o primeiro uso matemático verificável.
 - **Próximo foco:** seguir tabelas/calls indiretos que conectam o código do programa às rotinas de arquivo, buscando finalmente o fluxo `open -> read -> parse -> PROFILE/TRACKMAP`.
 
 Artefatos desta etapa: `/mnt/data/GhiniRun_stage18_loader_dataflow/` e `GhiniRun_stage18_loader_dataflow.zip`.
+
+## Estado do projeto — Etapa 21
+
+A Etapa 21 refinou o data-flow do runtime QuickBASIC. O dispatcher `0x19356`, os caminhos de leitura `0x1E5A0`/`0x1944B` e o scanner genérico `0x1E62E` foram separados da hipótese de parser de `Ghini.run`. A cadeia completa `data\ghini.run → parser PROFILE/TRACKMAP` ainda permanece aberta. Ver `docs/ENGINEERING_PHASE21.md` e `analysis/CALLCHAIN_FINDINGS.csv`.
