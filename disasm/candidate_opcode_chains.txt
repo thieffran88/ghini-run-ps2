@@ -1,0 +1,1154 @@
+ADDRESS 0x517c  IMM=0  OPERAND=%es
+    516e:	b8 01 00             	mov    $0x1,%ax
+    5171:	50                   	push   %ax
+    5172:	bb 3c 02             	mov    $0x23c,%bx
+    5175:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    517a:	8b f3                	mov    %bx,%si
+    517c:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    5180:	7c 03                	jl     0x5185
+    5182:	e9 72 00             	jmp    0x51f7
+    5185:	ff 76 de             	push   -0x22(%bp)
+    5188:	50                   	push   %ax
+    5189:	bb d6 01             	mov    $0x1d6,%bx
+    518c:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    5191:	26 8b 07             	mov    %es:(%bx),%ax
+
+ADDRESS 0x5208  IMM=0  OPERAND=%es
+    51fa:	b8 01 00             	mov    $0x1,%ax
+    51fd:	50                   	push   %ax
+    51fe:	bb 3c 02             	mov    $0x23c,%bx
+    5201:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    5206:	8b f3                	mov    %bx,%si
+    5208:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    520c:	7f 03                	jg     0x5211
+    520e:	e9 72 00             	jmp    0x5283
+    5211:	ff 76 de             	push   -0x22(%bp)
+    5214:	50                   	push   %ax
+    5215:	bb d6 01             	mov    $0x1d6,%bx
+    5218:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    521d:	26 8b 07             	mov    %es:(%bx),%ax
+
+ADDRESS 0x5316  IMM=0  OPERAND=%es
+    5308:	b8 01 00             	mov    $0x1,%ax
+    530b:	50                   	push   %ax
+    530c:	bb 3c 02             	mov    $0x23c,%bx
+    530f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    5314:	8b f3                	mov    %bx,%si
+    5316:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    531a:	7c 03                	jl     0x531f
+    531c:	e9 61 00             	jmp    0x5380
+    531f:	ff 76 de             	push   -0x22(%bp)
+    5322:	50                   	push   %ax
+    5323:	bb d6 01             	mov    $0x1d6,%bx
+    5326:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    532b:	26 8b 0f             	mov    %es:(%bx),%cx
+
+ADDRESS 0x5391  IMM=0  OPERAND=%es
+    5383:	b8 01 00             	mov    $0x1,%ax
+    5386:	50                   	push   %ax
+    5387:	bb 3c 02             	mov    $0x23c,%bx
+    538a:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    538f:	8b f3                	mov    %bx,%si
+    5391:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    5395:	7f 03                	jg     0x539a
+    5397:	e9 61 00             	jmp    0x53fb
+    539a:	ff 76 de             	push   -0x22(%bp)
+    539d:	50                   	push   %ax
+    539e:	bb d6 01             	mov    $0x1d6,%bx
+    53a1:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    53a6:	26 8b 0f             	mov    %es:(%bx),%cx
+
+ADDRESS 0x5405  IMM=3  OPERAND=%ax
+    53f6:	9a b8 8f 00 00       	lcall  $0x0,$0x8fb8
+    53fb:	e9 00 00             	jmp    0x53fe
+    53fe:	8b 46 de             	mov    -0x22(%bp),%ax
+    5401:	40                   	inc    %ax
+    5402:	89 46 de             	mov    %ax,-0x22(%bp)
+    5405:	3d 03 00             	cmp    $0x3,%ax
+    5408:	7f 03                	jg     0x540d
+    540a:	e9 df fb             	jmp    0x4fec
+    540d:	83 3e ae 03 64       	cmpw   $0x64,0x3ae
+    5412:	b8 00 00             	mov    $0x0,%ax
+    5415:	7d 01                	jge    0x5418
+    5417:	48                   	dec    %ax
+    5418:	83 3e ac 03 00       	cmpw   $0x0,0x3ac
+
+ADDRESS 0x5418  IMM=0  OPERAND=0x3ac
+    540a:	e9 df fb             	jmp    0x4fec
+    540d:	83 3e ae 03 64       	cmpw   $0x64,0x3ae
+    5412:	b8 00 00             	mov    $0x0,%ax
+    5415:	7d 01                	jge    0x5418
+    5417:	48                   	dec    %ax
+    5418:	83 3e ac 03 00       	cmpw   $0x0,0x3ac
+    541d:	b9 00 00             	mov    $0x0,%cx
+    5420:	7e 01                	jle    0x5423
+    5422:	49                   	dec    %cx
+    5423:	23 c8                	and    %ax,%cx
+    5425:	23 c9                	and    %cx,%cx
+    5427:	75 03                	jne    0x542c
+    5429:	e9 35 00             	jmp    0x5461
+
+ADDRESS 0x5471  IMM=1  OPERAND=-0x4c
+    5461:	83 3e ae 03 64       	cmpw   $0x64,0x3ae
+    5466:	7d 03                	jge    0x546b
+    5468:	e9 4e 00             	jmp    0x54b9
+    546b:	a1 ac 03             	mov    0x3ac,%ax
+    546e:	89 46 b4             	mov    %ax,-0x4c(%bp)
+    5471:	83 7e b4 01          	cmpw   $0x1,-0x4c(%bp)
+    5475:	74 03                	je     0x547a
+    5477:	e9 09 00             	jmp    0x5483
+    547a:	a1 b0 03             	mov    0x3b0,%ax
+    547d:	a3 36 02             	mov    %ax,0x236
+    5480:	e9 24 00             	jmp    0x54a7
+    5483:	83 7e b4 02          	cmpw   $0x2,-0x4c(%bp)
+    5487:	74 03                	je     0x548c
+
+ADDRESS 0x5483  IMM=2  OPERAND=-0x4c
+    5475:	74 03                	je     0x547a
+    5477:	e9 09 00             	jmp    0x5483
+    547a:	a1 b0 03             	mov    0x3b0,%ax
+    547d:	a3 36 02             	mov    %ax,0x236
+    5480:	e9 24 00             	jmp    0x54a7
+    5483:	83 7e b4 02          	cmpw   $0x2,-0x4c(%bp)
+    5487:	74 03                	je     0x548c
+    5489:	e9 09 00             	jmp    0x5495
+    548c:	a1 b0 03             	mov    0x3b0,%ax
+    548f:	a3 38 02             	mov    %ax,0x238
+    5492:	e9 12 00             	jmp    0x54a7
+    5495:	83 7e b4 03          	cmpw   $0x3,-0x4c(%bp)
+    5499:	74 03                	je     0x549e
+
+ADDRESS 0x5495  IMM=3  OPERAND=-0x4c
+    5487:	74 03                	je     0x548c
+    5489:	e9 09 00             	jmp    0x5495
+    548c:	a1 b0 03             	mov    0x3b0,%ax
+    548f:	a3 38 02             	mov    %ax,0x238
+    5492:	e9 12 00             	jmp    0x54a7
+    5495:	83 7e b4 03          	cmpw   $0x3,-0x4c(%bp)
+    5499:	74 03                	je     0x549e
+    549b:	e9 09 00             	jmp    0x54a7
+    549e:	a1 b0 03             	mov    0x3b0,%ax
+    54a1:	a3 34 02             	mov    %ax,0x234
+    54a4:	e9 00 00             	jmp    0x54a7
+    54a7:	c7 06 ac 03 00 00    	movw   $0x0,0x3ac
+    54ad:	c7 06 ae 03 00 00    	movw   $0x0,0x3ae
+
+ADDRESS 0x565f  IMM=4  OPERAND=%ax
+    5652:	05 14 00             	add    $0x14,%ax
+    5655:	a3 a8 03             	mov    %ax,0x3a8
+    5658:	8b 46 b2             	mov    -0x4e(%bp),%ax
+    565b:	40                   	inc    %ax
+    565c:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    565f:	3d 04 00             	cmp    $0x4,%ax
+    5662:	7f 03                	jg     0x5667
+    5664:	e9 57 fe             	jmp    0x54be
+    5667:	b8 02 00             	mov    $0x2,%ax
+    566a:	e9 e8 03             	jmp    0x5a55
+    566d:	90                   	nop
+    566e:	b9 06 00             	mov    $0x6,%cx
+    5671:	f7 e9                	imul   %cx
+
+ADDRESS 0x573a  IMM=1  OPERAND=-0x4e
+    572e:	3b 46 de             	cmp    -0x22(%bp),%ax
+    5731:	ba 00 00             	mov    $0x0,%dx
+    5734:	7c 01                	jl     0x5737
+    5736:	4a                   	dec    %dx
+    5737:	23 56 a2             	and    -0x5e(%bp),%dx
+    573a:	83 7e b2 01          	cmpw   $0x1,-0x4e(%bp)
+    573e:	b8 00 00             	mov    $0x0,%ax
+    5741:	75 01                	jne    0x5744
+    5743:	48                   	dec    %ax
+    5744:	3b 4e b2             	cmp    -0x4e(%bp),%cx
+    5747:	bb 00 00             	mov    $0x0,%bx
+    574a:	75 01                	jne    0x574d
+    574c:	4b                   	dec    %bx
+
+ADDRESS 0x574f  IMM=5  OPERAND=-0x4e
+    5744:	3b 4e b2             	cmp    -0x4e(%bp),%cx
+    5747:	bb 00 00             	mov    $0x0,%bx
+    574a:	75 01                	jne    0x574d
+    574c:	4b                   	dec    %bx
+    574d:	0b d8                	or     %ax,%bx
+    574f:	83 7e b2 05          	cmpw   $0x5,-0x4e(%bp)
+    5753:	b8 00 00             	mov    $0x0,%ax
+    5756:	75 01                	jne    0x5759
+    5758:	48                   	dec    %ax
+    5759:	0b c3                	or     %bx,%ax
+    575b:	83 7e b2 07          	cmpw   $0x7,-0x4e(%bp)
+    575f:	b9 00 00             	mov    $0x0,%cx
+    5762:	75 01                	jne    0x5765
+
+ADDRESS 0x575b  IMM=7  OPERAND=-0x4e
+    574f:	83 7e b2 05          	cmpw   $0x5,-0x4e(%bp)
+    5753:	b8 00 00             	mov    $0x0,%ax
+    5756:	75 01                	jne    0x5759
+    5758:	48                   	dec    %ax
+    5759:	0b c3                	or     %bx,%ax
+    575b:	83 7e b2 07          	cmpw   $0x7,-0x4e(%bp)
+    575f:	b9 00 00             	mov    $0x0,%cx
+    5762:	75 01                	jne    0x5765
+    5764:	49                   	dec    %cx
+    5765:	0b c8                	or     %ax,%cx
+    5767:	23 ca                	and    %dx,%cx
+    5769:	23 c9                	and    %cx,%cx
+    576b:	75 03                	jne    0x5770
+
+ADDRESS 0x577f  IMM=4  OPERAND=%ax
+    5770:	c7 46 a6 01 00       	movw   $0x1,-0x5a(%bp)
+    5775:	e9 0f 00             	jmp    0x5787
+    5778:	8b 46 b2             	mov    -0x4e(%bp),%ax
+    577b:	40                   	inc    %ax
+    577c:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    577f:	3d 04 00             	cmp    $0x4,%ax
+    5782:	7f 03                	jg     0x5787
+    5784:	e9 6d ff             	jmp    0x56f4
+    5787:	83 7e a6 01          	cmpw   $0x1,-0x5a(%bp)
+    578b:	74 03                	je     0x5790
+    578d:	e9 64 01             	jmp    0x58f4
+    5790:	83 3e ac 03 01       	cmpw   $0x1,0x3ac
+    5795:	b8 00 00             	mov    $0x0,%ax
+
+ADDRESS 0x5787  IMM=1  OPERAND=-0x5a
+    577b:	40                   	inc    %ax
+    577c:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    577f:	3d 04 00             	cmp    $0x4,%ax
+    5782:	7f 03                	jg     0x5787
+    5784:	e9 6d ff             	jmp    0x56f4
+    5787:	83 7e a6 01          	cmpw   $0x1,-0x5a(%bp)
+    578b:	74 03                	je     0x5790
+    578d:	e9 64 01             	jmp    0x58f4
+    5790:	83 3e ac 03 01       	cmpw   $0x1,0x3ac
+    5795:	b8 00 00             	mov    $0x0,%ax
+    5798:	75 01                	jne    0x579b
+    579a:	48                   	dec    %ax
+    579b:	8b d8                	mov    %ax,%bx
+
+ADDRESS 0x5790  IMM=1  OPERAND=0x3ac
+    5782:	7f 03                	jg     0x5787
+    5784:	e9 6d ff             	jmp    0x56f4
+    5787:	83 7e a6 01          	cmpw   $0x1,-0x5a(%bp)
+    578b:	74 03                	je     0x5790
+    578d:	e9 64 01             	jmp    0x58f4
+    5790:	83 3e ac 03 01       	cmpw   $0x1,0x3ac
+    5795:	b8 00 00             	mov    $0x0,%ax
+    5798:	75 01                	jne    0x579b
+    579a:	48                   	dec    %ax
+    579b:	8b d8                	mov    %ax,%bx
+    579d:	a1 ae 03             	mov    0x3ae,%ax
+    57a0:	3b 46 de             	cmp    -0x22(%bp),%ax
+    57a3:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x57b2  IMM=0  OPERAND=0x3b0
+    57a8:	49                   	dec    %cx
+    57a9:	23 cb                	and    %bx,%cx
+    57ab:	23 c9                	and    %cx,%cx
+    57ad:	75 03                	jne    0x57b2
+    57af:	e9 35 00             	jmp    0x57e7
+    57b2:	83 3e b0 03 00       	cmpw   $0x0,0x3b0
+    57b7:	7f 03                	jg     0x57bc
+    57b9:	e9 28 00             	jmp    0x57e4
+    57bc:	c7 46 a0 00 00       	movw   $0x0,-0x60(%bp)
+    57c1:	8b 46 ac             	mov    -0x54(%bp),%ax
+    57c4:	48                   	dec    %ax
+    57c5:	89 46 9e             	mov    %ax,-0x62(%bp)
+    57c8:	a1 b0 03             	mov    0x3b0,%ax
+
+ADDRESS 0x5819  IMM=2  OPERAND=0x3ac
+    580c:	8d 46 a8             	lea    -0x58(%bp),%ax
+    580f:	50                   	push   %ax
+    5810:	8d 46 96             	lea    -0x6a(%bp),%ax
+    5813:	50                   	push   %ax
+    5814:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    5819:	83 3e ac 03 02       	cmpw   $0x2,0x3ac
+    581e:	b8 00 00             	mov    $0x0,%ax
+    5821:	75 01                	jne    0x5824
+    5823:	48                   	dec    %ax
+    5824:	8b d8                	mov    %ax,%bx
+    5826:	a1 ae 03             	mov    0x3ae,%ax
+    5829:	3b 46 de             	cmp    -0x22(%bp),%ax
+    582c:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x583b  IMM=0  OPERAND=0x3b0
+    5831:	49                   	dec    %cx
+    5832:	23 cb                	and    %bx,%cx
+    5834:	23 c9                	and    %cx,%cx
+    5836:	75 03                	jne    0x583b
+    5838:	e9 35 00             	jmp    0x5870
+    583b:	83 3e b0 03 00       	cmpw   $0x0,0x3b0
+    5840:	7f 03                	jg     0x5845
+    5842:	e9 28 00             	jmp    0x586d
+    5845:	8b 46 aa             	mov    -0x56(%bp),%ax
+    5848:	40                   	inc    %ax
+    5849:	89 46 94             	mov    %ax,-0x6c(%bp)
+    584c:	c7 46 92 3f 01       	movw   $0x13f,-0x6e(%bp)
+    5851:	a1 b0 03             	mov    0x3b0,%ax
+
+ADDRESS 0x58a2  IMM=3  OPERAND=0x3ac
+    5895:	8d 46 a8             	lea    -0x58(%bp),%ax
+    5898:	50                   	push   %ax
+    5899:	8d 46 8a             	lea    -0x76(%bp),%ax
+    589c:	50                   	push   %ax
+    589d:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    58a2:	83 3e ac 03 03       	cmpw   $0x3,0x3ac
+    58a7:	b8 00 00             	mov    $0x0,%ax
+    58aa:	75 01                	jne    0x58ad
+    58ac:	48                   	dec    %ax
+    58ad:	8b d8                	mov    %ax,%bx
+    58af:	a1 ae 03             	mov    0x3ae,%ax
+    58b2:	3b 46 de             	cmp    -0x22(%bp),%ax
+    58b5:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x58f4  IMM=3  OPERAND=0x3ac
+    58e7:	50                   	push   %ax
+    58e8:	b8 34 02             	mov    $0x234,%ax
+    58eb:	50                   	push   %ax
+    58ec:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    58f1:	e9 5d 01             	jmp    0x5a51
+    58f4:	83 3e ac 03 03       	cmpw   $0x3,0x3ac
+    58f9:	b8 00 00             	mov    $0x0,%ax
+    58fc:	75 01                	jne    0x58ff
+    58fe:	48                   	dec    %ax
+    58ff:	8b d8                	mov    %ax,%bx
+    5901:	a1 ae 03             	mov    0x3ae,%ax
+    5904:	3b 46 de             	cmp    -0x22(%bp),%ax
+    5907:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x5951  IMM=1  OPERAND=0x3ac
+    5944:	8d 46 a8             	lea    -0x58(%bp),%ax
+    5947:	50                   	push   %ax
+    5948:	8d 46 86             	lea    -0x7a(%bp),%ax
+    594b:	50                   	push   %ax
+    594c:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    5951:	83 3e ac 03 01       	cmpw   $0x1,0x3ac
+    5956:	b8 00 00             	mov    $0x0,%ax
+    5959:	75 01                	jne    0x595c
+    595b:	48                   	dec    %ax
+    595c:	8b d8                	mov    %ax,%bx
+    595e:	a1 ae 03             	mov    0x3ae,%ax
+    5961:	3b 46 de             	cmp    -0x22(%bp),%ax
+    5964:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x5973  IMM=0  OPERAND=0x3b0
+    5969:	49                   	dec    %cx
+    596a:	23 cb                	and    %bx,%cx
+    596c:	23 c9                	and    %cx,%cx
+    596e:	75 03                	jne    0x5973
+    5970:	e9 2e 00             	jmp    0x59a1
+    5973:	83 3e b0 03 00       	cmpw   $0x0,0x3b0
+    5978:	7f 03                	jg     0x597d
+    597a:	e9 21 00             	jmp    0x599e
+    597d:	c7 46 84 00 00       	movw   $0x0,-0x7c(%bp)
+    5982:	8b 46 ac             	mov    -0x54(%bp),%ax
+    5985:	48                   	dec    %ax
+    5986:	89 46 82             	mov    %ax,-0x7e(%bp)
+    5989:	8d 46 84             	lea    -0x7c(%bp),%ax
+
+ADDRESS 0x59a1  IMM=0  OPERAND=0x236
+    5994:	50                   	push   %ax
+    5995:	b8 b0 03             	mov    $0x3b0,%ax
+    5998:	50                   	push   %ax
+    5999:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    599e:	e9 2d 00             	jmp    0x59ce
+    59a1:	83 3e 36 02 00       	cmpw   $0x0,0x236
+    59a6:	7f 03                	jg     0x59ab
+    59a8:	e9 23 00             	jmp    0x59ce
+    59ab:	c7 46 80 00 00       	movw   $0x0,-0x80(%bp)
+    59b0:	8b 46 ac             	mov    -0x54(%bp),%ax
+    59b3:	48                   	dec    %ax
+    59b4:	89 86 7e ff          	mov    %ax,-0x82(%bp)
+    59b8:	8d 46 80             	lea    -0x80(%bp),%ax
+
+ADDRESS 0x59ce  IMM=2  OPERAND=0x3ac
+    59c1:	8d 46 a8             	lea    -0x58(%bp),%ax
+    59c4:	50                   	push   %ax
+    59c5:	b8 36 02             	mov    $0x236,%ax
+    59c8:	50                   	push   %ax
+    59c9:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    59ce:	83 3e ac 03 02       	cmpw   $0x2,0x3ac
+    59d3:	b8 00 00             	mov    $0x0,%ax
+    59d6:	75 01                	jne    0x59d9
+    59d8:	48                   	dec    %ax
+    59d9:	8b d8                	mov    %ax,%bx
+    59db:	a1 ae 03             	mov    0x3ae,%ax
+    59de:	3b 46 de             	cmp    -0x22(%bp),%ax
+    59e1:	b9 00 00             	mov    $0x0,%cx
+
+ADDRESS 0x59f0  IMM=0  OPERAND=0x3b0
+    59e6:	49                   	dec    %cx
+    59e7:	23 cb                	and    %bx,%cx
+    59e9:	23 c9                	and    %cx,%cx
+    59eb:	75 03                	jne    0x59f0
+    59ed:	e9 32 00             	jmp    0x5a22
+    59f0:	83 3e b0 03 00       	cmpw   $0x0,0x3b0
+    59f5:	7f 03                	jg     0x59fa
+    59f7:	e9 25 00             	jmp    0x5a1f
+    59fa:	8b 46 aa             	mov    -0x56(%bp),%ax
+    59fd:	40                   	inc    %ax
+    59fe:	89 86 7c ff          	mov    %ax,-0x84(%bp)
+    5a02:	c7 86 7a ff 3f 01    	movw   $0x13f,-0x86(%bp)
+    5a08:	8d 86 7c ff          	lea    -0x84(%bp),%ax
+
+ADDRESS 0x5a22  IMM=0  OPERAND=0x238
+    5a15:	50                   	push   %ax
+    5a16:	b8 b0 03             	mov    $0x3b0,%ax
+    5a19:	50                   	push   %ax
+    5a1a:	9a fc 8b 00 00       	lcall  $0x0,$0x8bfc
+    5a1f:	e9 2f 00             	jmp    0x5a51
+    5a22:	83 3e 38 02 00       	cmpw   $0x0,0x238
+    5a27:	7f 03                	jg     0x5a2c
+    5a29:	e9 25 00             	jmp    0x5a51
+    5a2c:	8b 46 aa             	mov    -0x56(%bp),%ax
+    5a2f:	40                   	inc    %ax
+    5a30:	89 86 78 ff          	mov    %ax,-0x88(%bp)
+    5a34:	c7 86 76 ff 3f 01    	movw   $0x13f,-0x8a(%bp)
+    5a3a:	8d 86 78 ff          	lea    -0x88(%bp),%ax
+
+ADDRESS 0x5b43  IMM=4  OPERAND=%ax
+    5b36:	8b 46 de             	mov    -0x22(%bp),%ax
+    5b39:	26 89 07             	mov    %ax,%es:(%bx)
+    5b3c:	8b 46 de             	mov    -0x22(%bp),%ax
+    5b3f:	40                   	inc    %ax
+    5b40:	89 46 de             	mov    %ax,-0x22(%bp)
+    5b43:	3d 04 00             	cmp    $0x4,%ax
+    5b46:	7f 03                	jg     0x5b4b
+    5b48:	e9 6f ff             	jmp    0x5aba
+    5b4b:	ff b6 4c ff          	push   -0xb4(%bp)
+    5b4f:	b8 01 00             	mov    $0x1,%ax
+    5b52:	50                   	push   %ax
+    5b53:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    5b57:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x64ff  IMM=4  OPERAND=%ax
+    64f0:	29 06 d8 03          	sub    %ax,0x3d8
+    64f4:	01 0e be 04          	add    %cx,0x4be
+    64f8:	8b 46 b2             	mov    -0x4e(%bp),%ax
+    64fb:	40                   	inc    %ax
+    64fc:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    64ff:	3d 04 00             	cmp    $0x4,%ax
+    6502:	7f 03                	jg     0x6507
+    6504:	e9 8d f6             	jmp    0x5b94
+    6507:	33 c0                	xor    %ax,%ax
+    6509:	50                   	push   %ax
+    650a:	ff 36 92 03          	push   0x392
+    650e:	b8 02 00             	mov    $0x2,%ax
+    6511:	50                   	push   %ax
+
+ADDRESS 0x6718  IMM=0  OPERAND=%es
+    670a:	50                   	push   %ax
+    670b:	bb 66 00             	mov    $0x66,%bx
+    670e:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    6713:	83 c3 10             	add    $0x10,%bx
+    6716:	8b f3                	mov    %bx,%si
+    6718:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    671c:	7c 03                	jl     0x6721
+    671e:	e9 0e 01             	jmp    0x682f
+    6721:	ff 76 de             	push   -0x22(%bp)
+    6724:	50                   	push   %ax
+    6725:	bb 66 00             	mov    $0x66,%bx
+    6728:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    672d:	83 c3 10             	add    $0x10,%bx
+
+ADDRESS 0x6746  IMM=0  OPERAND=%es
+    6738:	50                   	push   %ax
+    6739:	bb 66 00             	mov    $0x66,%bx
+    673c:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    6741:	83 c3 12             	add    $0x12,%bx
+    6744:	8b f3                	mov    %bx,%si
+    6746:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    674a:	75 03                	jne    0x674f
+    674c:	e9 e0 00             	jmp    0x682f
+    674f:	ff 76 de             	push   -0x22(%bp)
+    6752:	50                   	push   %ax
+    6753:	bb 66 00             	mov    $0x66,%bx
+    6756:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    675b:	83 c3 12             	add    $0x12,%bx
+
+ADDRESS 0x67ab  IMM=0  OPERAND=-0x22
+    679a:	50                   	push   %ax
+    679b:	8d 86 0a ff          	lea    -0xf6(%bp),%ax
+    679f:	50                   	push   %ax
+    67a0:	9a 1a 01 4f 0c       	lcall  $0xc4f,$0x11a
+    67a5:	c7 06 dc 03 01 00    	movw   $0x1,0x3dc
+    67ab:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    67af:	b8 00 00             	mov    $0x0,%ax
+    67b2:	75 01                	jne    0x67b5
+    67b4:	48                   	dec    %ax
+    67b5:	8b d8                	mov    %ax,%bx
+    67b7:	33 c0                	xor    %ax,%ax
+    67b9:	50                   	push   %ax
+    67ba:	b8 01 00             	mov    $0x1,%ax
+
+ADDRESS 0x6843  IMM=0  OPERAND=%es
+    6835:	50                   	push   %ax
+    6836:	bb 66 00             	mov    $0x66,%bx
+    6839:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    683e:	83 c3 12             	add    $0x12,%bx
+    6841:	8b f3                	mov    %bx,%si
+    6843:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    6847:	b9 00 00             	mov    $0x0,%cx
+    684a:	75 01                	jne    0x684d
+    684c:	49                   	dec    %cx
+    684d:	ff 76 de             	push   -0x22(%bp)
+    6850:	50                   	push   %ax
+    6851:	bb 66 00             	mov    $0x66,%bx
+    6854:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x6882  IMM=0  OPERAND=%es
+    6874:	50                   	push   %ax
+    6875:	bb 66 00             	mov    $0x66,%bx
+    6878:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    687d:	83 c3 06             	add    $0x6,%bx
+    6880:	8b f3                	mov    %bx,%si
+    6882:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    6886:	b9 00 00             	mov    $0x0,%cx
+    6889:	7e 01                	jle    0x688c
+    688b:	49                   	dec    %cx
+    688c:	ff 76 de             	push   -0x22(%bp)
+    688f:	50                   	push   %ax
+    6890:	bb 66 00             	mov    $0x66,%bx
+    6893:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x68e9  IMM=0  OPERAND=%es
+    68db:	50                   	push   %ax
+    68dc:	bb 66 00             	mov    $0x66,%bx
+    68df:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    68e4:	83 c3 06             	add    $0x6,%bx
+    68e7:	8b f3                	mov    %bx,%si
+    68e9:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    68ed:	7c 03                	jl     0x68f2
+    68ef:	e9 14 00             	jmp    0x6906
+    68f2:	ff 76 de             	push   -0x22(%bp)
+    68f5:	50                   	push   %ax
+    68f6:	bb 66 00             	mov    $0x66,%bx
+    68f9:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    68fe:	83 c3 06             	add    $0x6,%bx
+
+ADDRESS 0x691a  IMM=0  OPERAND=%es
+    690c:	50                   	push   %ax
+    690d:	bb 66 00             	mov    $0x66,%bx
+    6910:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    6915:	83 c3 06             	add    $0x6,%bx
+    6918:	8b f3                	mov    %bx,%si
+    691a:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    691e:	b9 00 00             	mov    $0x0,%cx
+    6921:	7e 01                	jle    0x6924
+    6923:	49                   	dec    %cx
+    6924:	ff 76 de             	push   -0x22(%bp)
+    6927:	50                   	push   %ax
+    6928:	bb 66 00             	mov    $0x66,%bx
+    692b:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x69f2  IMM=0  OPERAND=%es
+    69e4:	50                   	push   %ax
+    69e5:	bb 66 00             	mov    $0x66,%bx
+    69e8:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    69ed:	83 c3 06             	add    $0x6,%bx
+    69f0:	8b f3                	mov    %bx,%si
+    69f2:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    69f6:	7c 03                	jl     0x69fb
+    69f8:	e9 2b 00             	jmp    0x6a26
+    69fb:	ff 76 de             	push   -0x22(%bp)
+    69fe:	50                   	push   %ax
+    69ff:	bb 66 00             	mov    $0x66,%bx
+    6a02:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    6a07:	83 c3 06             	add    $0x6,%bx
+
+ADDRESS 0x6ac9  IMM=0  OPERAND=-0xfa
+    6ab8:	50                   	push   %ax
+    6ab9:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    6abd:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    6ac2:	26 8b 07             	mov    %es:(%bx),%ax
+    6ac5:	89 86 06 ff          	mov    %ax,-0xfa(%bp)
+    6ac9:	83 be 06 ff 00       	cmpw   $0x0,-0xfa(%bp)
+    6ace:	74 03                	je     0x6ad3
+    6ad0:	e9 d3 03             	jmp    0x6ea6
+    6ad3:	a1 bc 03             	mov    0x3bc,%ax
+    6ad6:	89 86 f8 fe          	mov    %ax,-0x108(%bp)
+    6ada:	8b 4e de             	mov    -0x22(%bp),%cx
+    6add:	41                   	inc    %cx
+    6ade:	8b c1                	mov    %cx,%ax
+
+ADDRESS 0x6ea6  IMM=0  OPERAND=-0xfa
+    6e98:	50                   	push   %ax
+    6e99:	8d 86 ba fe          	lea    -0x146(%bp),%ax
+    6e9d:	50                   	push   %ax
+    6e9e:	9a 39 8d 00 00       	lcall  $0x0,$0x8d39
+    6ea3:	e9 e8 07             	jmp    0x768e
+    6ea6:	83 be 06 ff 00       	cmpw   $0x0,-0xfa(%bp)
+    6eab:	7f 03                	jg     0x6eb0
+    6ead:	e9 de 07             	jmp    0x768e
+    6eb0:	ff 76 de             	push   -0x22(%bp)
+    6eb3:	b8 01 00             	mov    $0x1,%ax
+    6eb6:	50                   	push   %ax
+    6eb7:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    6ebb:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x70da  IMM=0  OPERAND=%es
+    70cc:	50                   	push   %ax
+    70cd:	bb 66 00             	mov    $0x66,%bx
+    70d0:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    70d5:	83 c3 06             	add    $0x6,%bx
+    70d8:	8b f3                	mov    %bx,%si
+    70da:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    70de:	75 03                	jne    0x70e3
+    70e0:	e9 a6 00             	jmp    0x7189
+    70e3:	ff 76 de             	push   -0x22(%bp)
+    70e6:	50                   	push   %ax
+    70e7:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    70eb:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    70f0:	26 ff 37             	push   %es:(%bx)
+
+ADDRESS 0x7221  IMM=0  OPERAND=%es
+    7213:	50                   	push   %ax
+    7214:	bb 66 00             	mov    $0x66,%bx
+    7217:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    721c:	83 c3 10             	add    $0x10,%bx
+    721f:	8b f3                	mov    %bx,%si
+    7221:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    7225:	b9 00 00             	mov    $0x0,%cx
+    7228:	75 01                	jne    0x722b
+    722a:	49                   	dec    %cx
+    722b:	ff 76 de             	push   -0x22(%bp)
+    722e:	50                   	push   %ax
+    722f:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    7233:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0x7249  IMM=0  OPERAND=%es
+    723b:	50                   	push   %ax
+    723c:	bb 66 00             	mov    $0x66,%bx
+    723f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    7244:	83 c3 16             	add    $0x16,%bx
+    7247:	8b f3                	mov    %bx,%si
+    7249:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    724d:	ba 00 00             	mov    $0x0,%dx
+    7250:	75 01                	jne    0x7253
+    7252:	4a                   	dec    %dx
+    7253:	23 d1                	and    %cx,%dx
+    7255:	ff 76 de             	push   -0x22(%bp)
+    7258:	50                   	push   %ax
+    7259:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+
+ADDRESS 0x7292  IMM=3  OPERAND=%ax
+    7289:	8b c1                	mov    %cx,%ax
+    728b:	8b da                	mov    %dx,%bx
+    728d:	99                   	cwtd
+    728e:	33 c2                	xor    %dx,%ax
+    7290:	2b c2                	sub    %dx,%ax
+    7292:	3d 03 00             	cmp    $0x3,%ax
+    7295:	b9 00 00             	mov    $0x0,%cx
+    7298:	7f 01                	jg     0x729b
+    729a:	49                   	dec    %cx
+    729b:	23 cb                	and    %bx,%cx
+    729d:	ff 76 de             	push   -0x22(%bp)
+    72a0:	b8 01 00             	mov    $0x1,%ax
+    72a3:	50                   	push   %ax
+
+ADDRESS 0x7661  IMM=0  OPERAND=%es
+    7653:	50                   	push   %ax
+    7654:	bb 66 00             	mov    $0x66,%bx
+    7657:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    765c:	83 c3 12             	add    $0x12,%bx
+    765f:	8b f3                	mov    %bx,%si
+    7661:	26 83 3f 00          	cmpw   $0x0,%es:(%bx)
+    7665:	74 03                	je     0x766a
+    7667:	e9 21 00             	jmp    0x768b
+    766a:	ff 76 de             	push   -0x22(%bp)
+    766d:	50                   	push   %ax
+    766e:	8d 9e 52 ff          	lea    -0xae(%bp),%bx
+    7672:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    7677:	26 ff 37             	push   %es:(%bx)
+
+ADDRESS 0x8c70  IMM=2  OPERAND=-0xe
+    8c5e:	8d 46 de             	lea    -0x22(%bp),%ax
+    8c61:	50                   	push   %ax
+    8c62:	9a 1a 01 4f 0c       	lcall  $0xc4f,$0x11a
+    8c67:	c7 06 dc 03 01 00    	movw   $0x1,0x3dc
+    8c6d:	e9 c2 01             	jmp    0x8e32
+    8c70:	83 7e f2 02          	cmpw   $0x2,-0xe(%bp)
+    8c74:	b8 00 00             	mov    $0x0,%ax
+    8c77:	75 01                	jne    0x8c7a
+    8c79:	48                   	dec    %ax
+    8c7a:	25 32 00             	and    $0x32,%ax
+    8c7d:	3b 46 f4             	cmp    -0xc(%bp),%ax
+    8c80:	74 03                	je     0x8c85
+    8c82:	e9 0c 00             	jmp    0x8c91
+
+ADDRESS 0x9db4  IMM=3  OPERAND=-0xe
+    9da3:	83 7e f2 02          	cmpw   $0x2,-0xe(%bp)
+    9da7:	74 03                	je     0x9dac
+    9da9:	e9 08 00             	jmp    0x9db4
+    9dac:	9a 3c 6c 00 00       	lcall  $0x0,$0x6c3c
+    9db1:	e9 53 00             	jmp    0x9e07
+    9db4:	83 7e f2 03          	cmpw   $0x3,-0xe(%bp)
+    9db8:	74 03                	je     0x9dbd
+    9dba:	e9 14 00             	jmp    0x9dd1
+    9dbd:	9a 62 0a 00 00       	lcall  $0x0,$0xa62
+    9dc2:	89 46 de             	mov    %ax,-0x22(%bp)
+    9dc5:	8d 46 de             	lea    -0x22(%bp),%ax
+    9dc8:	50                   	push   %ax
+    9dc9:	9a 24 a4 00 00       	lcall  $0x0,$0xa424
+
+ADDRESS 0x9dd1  IMM=4  OPERAND=-0xe
+    9dc2:	89 46 de             	mov    %ax,-0x22(%bp)
+    9dc5:	8d 46 de             	lea    -0x22(%bp),%ax
+    9dc8:	50                   	push   %ax
+    9dc9:	9a 24 a4 00 00       	lcall  $0x0,$0xa424
+    9dce:	e9 36 00             	jmp    0x9e07
+    9dd1:	83 7e f2 04          	cmpw   $0x4,-0xe(%bp)
+    9dd5:	74 03                	je     0x9dda
+    9dd7:	e9 08 00             	jmp    0x9de2
+    9dda:	9a fc 6d 00 00       	lcall  $0x0,$0x6dfc
+    9ddf:	e9 25 00             	jmp    0x9e07
+    9de2:	83 7e f2 05          	cmpw   $0x5,-0xe(%bp)
+    9de6:	74 03                	je     0x9deb
+    9de8:	e9 08 00             	jmp    0x9df3
+
+ADDRESS 0xa03a  IMM=0  OPERAND=-0x22
+    a02b:	50                   	push   %ax
+    a02c:	bb e4 02             	mov    $0x2e4,%bx
+    a02f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a034:	26 8b 07             	mov    %es:(%bx),%ax
+    a037:	89 46 de             	mov    %ax,-0x22(%bp)
+    a03a:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    a03e:	74 03                	je     0xa043
+    a040:	e9 1a 00             	jmp    0xa05d
+    a043:	b8 d0 0d             	mov    $0xdd0,%ax
+    a046:	50                   	push   %ax
+    a047:	b8 01 00             	mov    $0x1,%ax
+    a04a:	50                   	push   %ax
+    a04b:	50                   	push   %ax
+
+ADDRESS 0xa05d  IMM=1  OPERAND=-0x22
+    a04c:	8d 5e e4             	lea    -0x1c(%bp),%bx
+    a04f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a054:	53                   	push   %bx
+    a055:	9a fe 62 8b 14       	lcall  $0x148b,$0x62fe
+    a05a:	e9 46 00             	jmp    0xa0a3
+    a05d:	83 7e de 01          	cmpw   $0x1,-0x22(%bp)
+    a061:	74 03                	je     0xa066
+    a063:	e9 1a 00             	jmp    0xa080
+    a066:	b8 e0 0d             	mov    $0xde0,%ax
+    a069:	50                   	push   %ax
+    a06a:	b8 01 00             	mov    $0x1,%ax
+    a06d:	50                   	push   %ax
+    a06e:	50                   	push   %ax
+
+ADDRESS 0xa080  IMM=2  OPERAND=-0x22
+    a06f:	8d 5e e4             	lea    -0x1c(%bp),%bx
+    a072:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a077:	53                   	push   %bx
+    a078:	9a fe 62 8b 14       	lcall  $0x148b,$0x62fe
+    a07d:	e9 23 00             	jmp    0xa0a3
+    a080:	83 7e de 02          	cmpw   $0x2,-0x22(%bp)
+    a084:	74 03                	je     0xa089
+    a086:	e9 1a 00             	jmp    0xa0a3
+    a089:	b8 f0 0d             	mov    $0xdf0,%ax
+    a08c:	50                   	push   %ax
+    a08d:	b8 01 00             	mov    $0x1,%ax
+    a090:	50                   	push   %ax
+    a091:	50                   	push   %ax
+
+ADDRESS 0xa480  IMM=0  OPERAND=-0x1e
+    a46d:	bb e4 02             	mov    $0x2e4,%bx
+    a470:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a475:	26 ff 37             	push   %es:(%bx)
+    a478:	9a a7 00 86 13       	lcall  $0x1386,$0xa7
+    a47d:	89 46 b4             	mov    %ax,-0x4c(%bp)
+    a480:	83 7e e2 00          	cmpw   $0x0,-0x1e(%bp)
+    a484:	b8 00 00             	mov    $0x0,%ax
+    a487:	75 01                	jne    0xa48a
+    a489:	48                   	dec    %ax
+    a48a:	23 46 b4             	and    -0x4c(%bp),%ax
+    a48d:	23 c0                	and    %ax,%ax
+    a48f:	75 03                	jne    0xa494
+    a491:	e9 80 01             	jmp    0xa614
+
+ADDRESS 0xa49a  IMM=1  OPERAND=-0x4e
+    a48d:	23 c0                	and    %ax,%ax
+    a48f:	75 03                	jne    0xa494
+    a491:	e9 80 01             	jmp    0xa614
+    a494:	8b 46 e0             	mov    -0x20(%bp),%ax
+    a497:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    a49a:	83 7e b2 01          	cmpw   $0x1,-0x4e(%bp)
+    a49e:	74 03                	je     0xa4a3
+    a4a0:	e9 5a 00             	jmp    0xa4fd
+    a4a3:	b8 04 00             	mov    $0x4,%ax
+    a4a6:	50                   	push   %ax
+    a4a7:	b8 01 00             	mov    $0x1,%ax
+    a4aa:	50                   	push   %ax
+    a4ab:	bb e4 02             	mov    $0x2e4,%bx
+
+ADDRESS 0xa4fd  IMM=2  OPERAND=-0x4e
+    a4ec:	50                   	push   %ax
+    a4ed:	bb e4 02             	mov    $0x2e4,%bx
+    a4f0:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a4f5:	26 c7 07 00 00       	movw   $0x0,%es:(%bx)
+    a4fa:	e9 12 01             	jmp    0xa60f
+    a4fd:	83 7e b2 02          	cmpw   $0x2,-0x4e(%bp)
+    a501:	74 03                	je     0xa506
+    a503:	e9 58 00             	jmp    0xa55e
+    a506:	33 c0                	xor    %ax,%ax
+    a508:	50                   	push   %ax
+    a509:	b8 01 00             	mov    $0x1,%ax
+    a50c:	50                   	push   %ax
+    a50d:	bb e4 02             	mov    $0x2e4,%bx
+
+ADDRESS 0xa55e  IMM=3  OPERAND=-0x4e
+    a54d:	50                   	push   %ax
+    a54e:	bb e4 02             	mov    $0x2e4,%bx
+    a551:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a556:	26 c7 07 19 00       	movw   $0x19,%es:(%bx)
+    a55b:	e9 b1 00             	jmp    0xa60f
+    a55e:	83 7e b2 03          	cmpw   $0x3,-0x4e(%bp)
+    a562:	74 03                	je     0xa567
+    a564:	e9 45 00             	jmp    0xa5ac
+    a567:	b8 01 00             	mov    $0x1,%ax
+    a56a:	50                   	push   %ax
+    a56b:	50                   	push   %ax
+    a56c:	bb e4 02             	mov    $0x2e4,%bx
+    a56f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0xa5ac  IMM=4  OPERAND=-0x4e
+    a59b:	50                   	push   %ax
+    a59c:	bb e4 02             	mov    $0x2e4,%bx
+    a59f:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    a5a4:	26 c7 07 00 00       	movw   $0x0,%es:(%bx)
+    a5a9:	e9 63 00             	jmp    0xa60f
+    a5ac:	83 7e b2 04          	cmpw   $0x4,-0x4e(%bp)
+    a5b0:	74 03                	je     0xa5b5
+    a5b2:	e9 5a 00             	jmp    0xa60f
+    a5b5:	b8 0d 00             	mov    $0xd,%ax
+    a5b8:	50                   	push   %ax
+    a5b9:	b8 01 00             	mov    $0x1,%ax
+    a5bc:	50                   	push   %ax
+    a5bd:	bb e4 02             	mov    $0x2e4,%bx
+
+ADDRESS 0xaf34  IMM=4  OPERAND=-0x4c
+    af27:	a1 1c 03             	mov    0x31c,%ax
+    af2a:	3b 06 8c 03          	cmp    0x38c,%ax
+    af2e:	b9 00 00             	mov    $0x0,%cx
+    af31:	7e 01                	jle    0xaf34
+    af33:	49                   	dec    %cx
+    af34:	83 7e b4 04          	cmpw   $0x4,-0x4c(%bp)
+    af38:	ba 00 00             	mov    $0x0,%dx
+    af3b:	7d 01                	jge    0xaf3e
+    af3d:	4a                   	dec    %dx
+    af3e:	0b d1                	or     %cx,%dx
+    af40:	23 d2                	and    %dx,%dx
+    af42:	75 03                	jne    0xaf47
+    af44:	e9 03 00             	jmp    0xaf4a
+
+ADDRESS 0xb698  IMM=6  OPERAND=%ax
+    b68b:	53                   	push   %bx
+    b68c:	9a fe 62 8b 14       	lcall  $0x148b,$0x62fe
+    b691:	8b 46 de             	mov    -0x22(%bp),%ax
+    b694:	40                   	inc    %ax
+    b695:	89 46 de             	mov    %ax,-0x22(%bp)
+    b698:	3d 06 00             	cmp    $0x6,%ax
+    b69b:	7e 93                	jle    0xb630
+    b69d:	b8 04 00             	mov    $0x4,%ax
+    b6a0:	50                   	push   %ax
+    b6a1:	b8 01 00             	mov    $0x1,%ax
+    b6a4:	50                   	push   %ax
+    b6a5:	bb e4 02             	mov    $0x2e4,%bx
+    b6a8:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+
+ADDRESS 0xb96d  IMM=2  OPERAND=-0x3a
+    b961:	40                   	inc    %ax
+    b962:	89 46 de             	mov    %ax,-0x22(%bp)
+    b965:	3b 46 9a             	cmp    -0x66(%bp),%ax
+    b968:	7e 8e                	jle    0xb8f8
+    b96a:	e9 59 03             	jmp    0xbcc6
+    b96d:	83 7e c6 02          	cmpw   $0x2,-0x3a(%bp)
+    b971:	74 03                	je     0xb976
+    b973:	e9 50 03             	jmp    0xbcc6
+    b976:	c7 46 8e b1 00       	movw   $0xb1,-0x72(%bp)
+    b97b:	c7 46 8c d2 00       	movw   $0xd2,-0x74(%bp)
+    b980:	c7 46 8a 64 00       	movw   $0x64,-0x76(%bp)
+    b985:	c7 46 88 80 00       	movw   $0x80,-0x78(%bp)
+    b98a:	8d 46 8e             	lea    -0x72(%bp),%ax
+
+ADDRESS 0xc631  IMM=0  OPERAND=-0x20
+    c624:	75 03                	jne    0xc629
+    c626:	e9 ce 00             	jmp    0xc6f7
+    c629:	8b 76 06             	mov    0x6(%bp),%si
+    c62c:	8b 04                	mov    (%si),%ax
+    c62e:	89 46 e0             	mov    %ax,-0x20(%bp)
+    c631:	83 7e e0 00          	cmpw   $0x0,-0x20(%bp)
+    c635:	74 03                	je     0xc63a
+    c637:	e9 1e 00             	jmp    0xc658
+    c63a:	8b 76 0a             	mov    0xa(%bp),%si
+    c63d:	8b 04                	mov    (%si),%ax
+    c63f:	03 46 dc             	add    -0x24(%bp),%ax
+    c642:	89 46 de             	mov    %ax,-0x22(%bp)
+    c645:	8d 46 f2             	lea    -0xe(%bp),%ax
+
+ADDRESS 0xc658  IMM=1  OPERAND=-0x20
+    c649:	8d 46 de             	lea    -0x22(%bp),%ax
+    c64c:	50                   	push   %ax
+    c64d:	ff 76 08             	push   0x8(%bp)
+    c650:	9a 39 8d 00 00       	lcall  $0x0,$0x8d39
+    c655:	e9 9f 00             	jmp    0xc6f7
+    c658:	83 7e e0 01          	cmpw   $0x1,-0x20(%bp)
+    c65c:	7d 03                	jge    0xc661
+    c65e:	e9 34 00             	jmp    0xc695
+    c661:	81 7e e0 68 01       	cmpw   $0x168,-0x20(%bp)
+    c666:	7e 03                	jle    0xc66b
+    c668:	e9 2a 00             	jmp    0xc695
+    c66b:	8b 76 0a             	mov    0xa(%bp),%si
+    c66e:	8b 04                	mov    (%si),%ax
+
+ADDRESS 0xc93f  IMM=7  OPERAND=%ax
+    c932:	53                   	push   %bx
+    c933:	9a fe 62 8b 14       	lcall  $0x148b,$0x62fe
+    c938:	8b 46 b2             	mov    -0x4e(%bp),%ax
+    c93b:	40                   	inc    %ax
+    c93c:	89 46 b2             	mov    %ax,-0x4e(%bp)
+    c93f:	3d 07 00             	cmp    $0x7,%ax
+    c942:	7e ce                	jle    0xc912
+    c944:	b8 2d 0a             	mov    $0xa2d,%ax
+    c947:	50                   	push   %ax
+    c948:	9a d9 61 8b 14       	lcall  $0x148b,$0x61d9
+    c94d:	b9 06 00             	mov    $0x6,%cx
+    c950:	a1 d6 03             	mov    0x3d6,%ax
+    c953:	48                   	dec    %ax
+
+ADDRESS 0xdca4  IMM=1  OPERAND=-0x50
+    dc98:	23 c8                	and    %ax,%cx
+    dc9a:	23 c9                	and    %cx,%cx
+    dc9c:	75 03                	jne    0xdca1
+    dc9e:	e9 03 00             	jmp    0xdca4
+    dca1:	ff 4e b2             	decw   -0x4e(%bp)
+    dca4:	83 7e b0 01          	cmpw   $0x1,-0x50(%bp)
+    dca8:	b8 00 00             	mov    $0x0,%ax
+    dcab:	75 01                	jne    0xdcae
+    dcad:	48                   	dec    %ax
+    dcae:	83 7e b2 00          	cmpw   $0x0,-0x4e(%bp)
+    dcb2:	b9 00 00             	mov    $0x0,%cx
+    dcb5:	7d 01                	jge    0xdcb8
+    dcb7:	49                   	dec    %cx
+
+ADDRESS 0xdcae  IMM=0  OPERAND=-0x4e
+    dca1:	ff 4e b2             	decw   -0x4e(%bp)
+    dca4:	83 7e b0 01          	cmpw   $0x1,-0x50(%bp)
+    dca8:	b8 00 00             	mov    $0x0,%ax
+    dcab:	75 01                	jne    0xdcae
+    dcad:	48                   	dec    %ax
+    dcae:	83 7e b2 00          	cmpw   $0x0,-0x4e(%bp)
+    dcb2:	b9 00 00             	mov    $0x0,%cx
+    dcb5:	7d 01                	jge    0xdcb8
+    dcb7:	49                   	dec    %cx
+    dcb8:	23 c8                	and    %ax,%cx
+    dcba:	23 c9                	and    %cx,%cx
+    dcbc:	75 03                	jne    0xdcc1
+    dcbe:	e9 03 00             	jmp    0xdcc4
+
+ADDRESS 0xe302  IMM=0  OPERAND=-0x88
+    e2f6:	8b 46 84             	mov    -0x7c(%bp),%ax
+    e2f9:	40                   	inc    %ax
+    e2fa:	89 46 84             	mov    %ax,-0x7c(%bp)
+    e2fd:	3d 01 00             	cmp    $0x1,%ax
+    e300:	7e cc                	jle    0xe2ce
+    e302:	83 be 78 ff 00       	cmpw   $0x0,-0x88(%bp)
+    e307:	7c 03                	jl     0xe30c
+    e309:	e9 46 00             	jmp    0xe352
+    e30c:	c7 86 7c ff 5b 00    	movw   $0x5b,-0x84(%bp)
+    e312:	c7 86 7a ff 82 00    	movw   $0x82,-0x86(%bp)
+    e318:	8d 86 7c ff          	lea    -0x84(%bp),%ax
+    e31c:	50                   	push   %ax
+    e31d:	8d 46 de             	lea    -0x22(%bp),%ax
+
+ADDRESS 0xedb0  IMM=0  OPERAND=-0xe
+    eda2:	23 c8                	and    %ax,%cx
+    eda4:	23 c9                	and    %cx,%cx
+    eda6:	75 03                	jne    0xedab
+    eda8:	e9 05 00             	jmp    0xedb0
+    edab:	c7 46 de 00 00       	movw   $0x0,-0x22(%bp)
+    edb0:	83 7e f2 00          	cmpw   $0x0,-0xe(%bp)
+    edb4:	74 03                	je     0xedb9
+    edb6:	e9 1b 00             	jmp    0xedd4
+    edb9:	83 7e ea 31          	cmpw   $0x31,-0x16(%bp)
+    edbd:	7c 03                	jl     0xedc2
+    edbf:	e9 0c 00             	jmp    0xedce
+    edc2:	83 46 ea 02          	addw   $0x2,-0x16(%bp)
+    edc6:	c7 46 de 01 00       	movw   $0x1,-0x22(%bp)
+
+ADDRESS 0xedd4  IMM=1  OPERAND=-0xe
+    edc2:	83 46 ea 02          	addw   $0x2,-0x16(%bp)
+    edc6:	c7 46 de 01 00       	movw   $0x1,-0x22(%bp)
+    edcb:	e9 03 00             	jmp    0xedd1
+    edce:	e9 45 05             	jmp    0xf316
+    edd1:	e9 1b 00             	jmp    0xedef
+    edd4:	83 7e f2 01          	cmpw   $0x1,-0xe(%bp)
+    edd8:	74 03                	je     0xeddd
+    edda:	e9 12 00             	jmp    0xedef
+    eddd:	83 7e ea 14          	cmpw   $0x14,-0x16(%bp)
+    ede1:	7d 03                	jge    0xede6
+    ede3:	e9 09 00             	jmp    0xedef
+    ede6:	83 46 ea fe          	addw   $0xfffe,-0x16(%bp)
+    edea:	c7 46 de 01 00       	movw   $0x1,-0x22(%bp)
+
+ADDRESS 0xf298  IMM=1  OPERAND=-0xe
+    f284:	bb e4 02             	mov    $0x2e4,%bx
+    f287:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    f28c:	26 ff 37             	push   %es:(%bx)
+    f28f:	9a a7 00 86 13       	lcall  $0x1386,$0xa7
+    f294:	89 86 3a ff          	mov    %ax,-0xc6(%bp)
+    f298:	83 7e f2 01          	cmpw   $0x1,-0xe(%bp)
+    f29c:	b8 00 00             	mov    $0x0,%ax
+    f29f:	75 01                	jne    0xf2a2
+    f2a1:	48                   	dec    %ax
+    f2a2:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    f2a6:	b9 00 00             	mov    $0x0,%cx
+    f2a9:	75 01                	jne    0xf2ac
+    f2ab:	49                   	dec    %cx
+
+ADDRESS 0xf2a2  IMM=0  OPERAND=-0x22
+    f294:	89 86 3a ff          	mov    %ax,-0xc6(%bp)
+    f298:	83 7e f2 01          	cmpw   $0x1,-0xe(%bp)
+    f29c:	b8 00 00             	mov    $0x0,%ax
+    f29f:	75 01                	jne    0xf2a2
+    f2a1:	48                   	dec    %ax
+    f2a2:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    f2a6:	b9 00 00             	mov    $0x0,%cx
+    f2a9:	75 01                	jne    0xf2ac
+    f2ab:	49                   	dec    %cx
+    f2ac:	23 c8                	and    %ax,%cx
+    f2ae:	83 7e f4 00          	cmpw   $0x0,-0xc(%bp)
+    f2b2:	b8 00 00             	mov    $0x0,%ax
+    f2b5:	75 01                	jne    0xf2b8
+
+ADDRESS 0xf2ae  IMM=0  OPERAND=-0xc
+    f2a2:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    f2a6:	b9 00 00             	mov    $0x0,%cx
+    f2a9:	75 01                	jne    0xf2ac
+    f2ab:	49                   	dec    %cx
+    f2ac:	23 c8                	and    %ax,%cx
+    f2ae:	83 7e f4 00          	cmpw   $0x0,-0xc(%bp)
+    f2b2:	b8 00 00             	mov    $0x0,%ax
+    f2b5:	75 01                	jne    0xf2b8
+    f2b7:	48                   	dec    %ax
+    f2b8:	23 c1                	and    %cx,%ax
+    f2ba:	23 86 3a ff          	and    -0xc6(%bp),%ax
+    f2be:	23 c0                	and    %ax,%ax
+    f2c0:	75 03                	jne    0xf2c5
+
+ADDRESS 0xf2e9  IMM=1  OPERAND=-0xe
+    f2d5:	bb e4 02             	mov    $0x2e4,%bx
+    f2d8:	9a f0 29 8b 14       	lcall  $0x148b,$0x29f0
+    f2dd:	26 ff 37             	push   %es:(%bx)
+    f2e0:	9a a7 00 86 13       	lcall  $0x1386,$0xa7
+    f2e5:	89 86 38 ff          	mov    %ax,-0xc8(%bp)
+    f2e9:	83 7e f2 01          	cmpw   $0x1,-0xe(%bp)
+    f2ed:	b8 00 00             	mov    $0x0,%ax
+    f2f0:	75 01                	jne    0xf2f3
+    f2f2:	48                   	dec    %ax
+    f2f3:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    f2f7:	b9 00 00             	mov    $0x0,%cx
+    f2fa:	75 01                	jne    0xf2fd
+    f2fc:	49                   	dec    %cx
+
+ADDRESS 0xf2f3  IMM=0  OPERAND=-0x22
+    f2e5:	89 86 38 ff          	mov    %ax,-0xc8(%bp)
+    f2e9:	83 7e f2 01          	cmpw   $0x1,-0xe(%bp)
+    f2ed:	b8 00 00             	mov    $0x0,%ax
+    f2f0:	75 01                	jne    0xf2f3
+    f2f2:	48                   	dec    %ax
+    f2f3:	83 7e de 00          	cmpw   $0x0,-0x22(%bp)
+    f2f7:	b9 00 00             	mov    $0x0,%cx
+    f2fa:	75 01                	jne    0xf2fd
+    f2fc:	49                   	dec    %cx
+    f2fd:	23 c8                	and    %ax,%cx
+    f2ff:	23 8e 38 ff          	and    -0xc8(%bp),%cx
+    f303:	23 c9                	and    %cx,%cx
+    f305:	75 03                	jne    0xf30a
+
+ADDRESS 0x1148c  IMM=7  OPERAND=%ax
+   1147e:	8e 06 93 40          	mov    0x4093,%es
+   11482:	26 88 07             	mov    %al,%es:(%bx)
+   11485:	8b 46 de             	mov    -0x22(%bp),%ax
+   11488:	40                   	inc    %ax
+   11489:	89 46 de             	mov    %ax,-0x22(%bp)
+   1148c:	3d 07 00             	cmp    $0x7,%ax
+   1148f:	7f 03                	jg     0x11494
+   11491:	e9 72 ff             	jmp    0x11406
+   11494:	8b 46 ea             	mov    -0x16(%bp),%ax
+   11497:	40                   	inc    %ax
+   11498:	89 46 ea             	mov    %ax,-0x16(%bp)
+   1149b:	3d 07 00             	cmp    $0x7,%ax
+   1149e:	7f 03                	jg     0x114a3
+
+ADDRESS 0x135b9  IMM=0  OPERAND=-0x2a
+   135aa:	50                   	push   %ax
+   135ab:	9a 9e 00 5d 14       	lcall  $0x145d,$0x9e
+   135b0:	89 46 d8             	mov    %ax,-0x28(%bp)
+   135b3:	8b 46 d8             	mov    -0x28(%bp),%ax
+   135b6:	89 46 d6             	mov    %ax,-0x2a(%bp)
+   135b9:	83 7e d6 00          	cmpw   $0x0,-0x2a(%bp)
+   135bd:	7c 03                	jl     0x135c2
+   135bf:	e9 1a 00             	jmp    0x135dc
+   135c2:	ff 76 e0             	push   -0x20(%bp)
+   135c5:	9a 85 00 5d 14       	lcall  $0x145d,$0x85
+   135ca:	89 46 d4             	mov    %ax,-0x2c(%bp)
+   135cd:	8b 46 d4             	mov    -0x2c(%bp),%ax
+   135d0:	89 46 de             	mov    %ax,-0x22(%bp)
+
+ADDRESS 0x18260  IMM=0  OPERAND=%ah
+   18253:	be d0 35             	mov    $0x35d0,%si
+   18256:	0a e4                	or     %ah,%ah
+   18258:	74 03                	je     0x1825d
+   1825a:	be e6 35             	mov    $0x35e6,%si
+   1825d:	e8 31 00             	call   0x18291
+   18260:	80 fc 00             	cmp    $0x0,%ah
+   18263:	75 27                	jne    0x1828c
+   18265:	bb b2 3a             	mov    $0x3ab2,%bx
+   18268:	80 3c 00             	cmpb   $0x0,(%si)
+   1826b:	74 03                	je     0x18270
+   1826d:	bb c0 3a             	mov    $0x3ac0,%bx
+   18270:	83 7f 08 00          	cmpw   $0x0,0x8(%bx)
+   18274:	75 0a                	jne    0x18280
+
+ADDRESS 0x18270  IMM=0  OPERAND=0x8
+   18263:	75 27                	jne    0x1828c
+   18265:	bb b2 3a             	mov    $0x3ab2,%bx
+   18268:	80 3c 00             	cmpb   $0x0,(%si)
+   1826b:	74 03                	je     0x18270
+   1826d:	bb c0 3a             	mov    $0x3ac0,%bx
+   18270:	83 7f 08 00          	cmpw   $0x0,0x8(%bx)
+   18274:	75 0a                	jne    0x18280
+   18276:	80 7c 0f 00          	cmpb   $0x0,0xf(%si)
+   1827a:	74 10                	je     0x1828c
+   1827c:	b0 1a                	mov    $0x1a,%al
+   1827e:	eb 08                	jmp    0x18288
+   18280:	06                   	push   %es
+   18281:	8e 44 12             	mov    0x12(%si),%es
+
+ADDRESS 0x1834e  IMM=0  OPERAND=0x8
+   18341:	bb ce 3a             	mov    $0x3ace,%bx
+   18344:	0a e4                	or     %ah,%ah
+   18346:	74 06                	je     0x1834e
+   18348:	be e6 35             	mov    $0x35e6,%si
+   1834b:	bb dc 3a             	mov    $0x3adc,%bx
+   1834e:	83 7f 08 00          	cmpw   $0x0,0x8(%bx)
+   18352:	74 0d                	je     0x18361
+   18354:	e8 5e fe             	call   0x181b5
+   18357:	0a f6                	or     %dh,%dh
+   18359:	75 06                	jne    0x18361
+   1835b:	83 7f 08 00          	cmpw   $0x0,0x8(%bx)
+   1835f:	75 f3                	jne    0x18354
+   18361:	51                   	push   %cx
+
+ADDRESS 0x184b3  IMM=0  OPERAND=0x8
+   184a6:	8b f3                	mov    %bx,%si
+   184a8:	bb ce 3a             	mov    $0x3ace,%bx
+   184ab:	80 3d 00             	cmpb   $0x0,(%di)
+   184ae:	74 03                	je     0x184b3
+   184b0:	bb dc 3a             	mov    $0x3adc,%bx
+   184b3:	83 7f 08 00          	cmpw   $0x0,0x8(%bx)
+   184b7:	74 0c                	je     0x184c5
+   184b9:	4a                   	dec    %dx
+   184ba:	4a                   	dec    %dx
+   184bb:	06                   	push   %es
+   184bc:	8e 45 14             	mov    0x14(%di),%es
+   184bf:	e8 74 00             	call   0x18536
+   184c2:	07                   	pop    %es
