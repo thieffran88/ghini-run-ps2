@@ -1,0 +1,13 @@
+Stage 19 findings
+
+CONFIRMED
+- The EXE contains a QuickBASIC-like runtime dispatcher at 0x19356. It computes an index from a runtime type byte and performs an indirect CS-relative call; this explains why application-level file operations do not necessarily appear as direct CALL 0x19062/0x1926c references.
+- File I/O is implemented below that layer: READ at 0x19062, WRITE at 0x1908e/0x18f7d, CLOSE at 0x1909e, OPEN at 0x1926c, LSEEK at 0x18e41.
+- The runtime keeps per-stream state in a structure addressed through SI. Confirmed fields used include +0x01 (DOS handle), +0x05 (flags), +0x06 (buffer/limit-related word), +0x0c/+0x0e (position), +0x10 (buffer cursor), and +0x12/+0x13 (buffer bytes). These offsets are runtime structure evidence, not Ghini.run record fields.
+- Ghini.run is strongly whitespace/indent based and contains no commas in the extracted file.
+
+REJECTED FOR GHINI.RUN
+- The generic text parser around 0x1e62e reads comma/newline/quote-delimited input and is therefore not a direct semantic match for the observed Ghini.run grammar.
+
+OPEN
+- The exact application-side call sequence that opens data\ghini.run and dispatches PROFILE/TRACKMAP remains unresolved because the QB runtime boundary uses indirect dispatch/metadata.

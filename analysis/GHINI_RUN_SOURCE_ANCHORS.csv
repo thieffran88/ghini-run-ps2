@@ -1,0 +1,6 @@
+label,literal,file_offset
+filename,data\ghini.run,0x23be4
+profile,PROFILE,0x23c00
+profile_error,Error before PROFILE,0x23c0c
+trackmap,TRACKMAP,0x23c24
+trackmap_error,Error before TRACKMAP,0x23c30
