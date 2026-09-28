@@ -1,0 +1,5 @@
+CONFIRMED: 0x19356 is a second-level runtime dispatcher. It derives an index from file-state byte [SI+03], uses DS:[360C] as a pointer to a CS vector table, then indirect-calls a target selected from that table.
+CONFIRMED: DS:[360C] initially contains 0xF0B8; vector data therefore begins at file/segment-relative 0xF0B8.
+CONFIRMED: 0x1944B reads the current stream through the runtime dispatcher; application/text parsing routines call it repeatedly.
+STRONG: the dispatcher/vector is a better bridge for following application file operations than raw INT 21h xrefs.
+OPEN: mapping every vector index to a BASIC source statement and proving the Ghini.run call chain.
