@@ -1,5 +1,3 @@
-# Ghini Run — Stage 10
+# Ghini Run — Stage 11
 
-Reverse-engineering evidence for PROFILE/TRACKMAP interpretation.
-
-This stage is deliberately conservative: candidate opcode/state chains are documented, but no gameplay meaning is asserted without a cross-reference from the executable.
+Data-flow analysis for PROFILE/TRACKMAP. The main result is a conservative rejection of the Stage-10 opcode candidate as insufficiently connected to Ghini.run provenance.

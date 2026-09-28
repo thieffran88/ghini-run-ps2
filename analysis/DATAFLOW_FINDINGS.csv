@@ -1,0 +1,7 @@
+item,offset,observation,interpretation,status
+candidate_block,5461-5667,"loop count 5; uses runtime calls with selectors 0x66,0x94,0xc2,0x11e,0xf0,0x14c,0x1a8","structured runtime/object access, not enough evidence for TRACKMAP","candidate only"
+selector_66,54c4..5642,"repeated call with BX=0x66 then +4; reads ES:[BX]","likely indexed runtime array access","unresolved"
+selector_94,54fc..5537,"reads/writes ES:[0x94]","state/object field","unresolved"
+selector_c2,5589,"writes ES:[0xc2]","state/object field","unresolved"
+small_int_switch,5471..549e,"compares local value against 1,2,3","state dispatch, but no direct TRACKMAP provenance","not confirmed"
+trackmap_provenance,all,"no source-read/ASCII-conversion edge survives in available artifact","cannot claim block interprets TRACKMAP","not found"
