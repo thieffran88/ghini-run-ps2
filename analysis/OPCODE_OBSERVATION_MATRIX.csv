@@ -1,0 +1,9 @@
+opcode,observed_records,two_field_records,three_field_records,field2_min,field2_max,field3_values,safe_observation
+0,401,401,0,10,2000,,field2 is positive in all observed records
+1,94,0,94,9,2000,1,field2 is positive in all observed records
+2,8,8,0,100,400,,field2 is positive in all observed records
+3,184,0,184,10,250,"1,2,3,4",field2 is positive in all observed records
+4,50,50,0,300,1000,,field2 is positive in all observed records
+5,70,0,70,30,500,1,field2 is positive in all observed records
+6,38,38,0,200,1000,,field2 is positive in all observed records
+7,192,0,192,10,500,"1,2,3,4",field2 is positive in all observed records

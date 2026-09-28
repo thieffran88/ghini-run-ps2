@@ -1,0 +1,7 @@
+track_a,track_b,profile_equal,toplevel_equal,toplevel_count_a,toplevel_count_b
+TRACK1,TRACK11,True,False,71,71
+TRACK2,TRACK12,True,True,64,64
+TRACK3,TRACK13,True,True,80,80
+TRACK4,TRACK14,True,True,109,109
+TRACK5,TRACK15,True,True,103,103
+TRACK6,TRACK16,True,False,94,93
