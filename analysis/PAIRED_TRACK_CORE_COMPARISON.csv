@@ -1,0 +1,7 @@
+pair,segments_a,segments_b,core_length_equal,core_field_differences,first_core_differences
+TRACK1/TRACK11,71,71,True,29,"32,33,34,35,36,37,38,39,40,41"
+TRACK2/TRACK12,64,64,True,0,
+TRACK3/TRACK13,80,80,True,0,
+TRACK4/TRACK14,109,109,True,0,
+TRACK5/TRACK15,103,103,True,0,
+TRACK6/TRACK16,94,93,False,64,"28,29,30,31,32,33,34,35,36,37"

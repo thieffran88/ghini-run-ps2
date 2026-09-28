@@ -13,7 +13,7 @@
 
 ## Estado atual
 
-**Etapa 13 — análise estrutural de `PROFILE`/`TRACKMAP`.**
+**Etapa 15 — separação do `TRACKMAP` em core geométrico e sideband nested.**
 
 A estrutura dos dados de pista já está bem caracterizada, mas a semântica final dos opcodes ainda não deve ser considerada resolvida. O próximo alvo é ligar os registros de `TRACKMAP` às variáveis e rotinas que controlam a geometria da pista durante a corrida.
 
@@ -451,14 +451,15 @@ Consolidação estrutural dos opcodes de `TRACKMAP`. Foram separadas propriedade
 
 A meta não é apenas fazer uma imagem parecida com o jogo original. A meta é chegar a uma reconstrução tecnicamente explicável, reproduzível e suficientemente fiel para servir de base à reimplementação e, posteriormente, à investigação da portabilidade para PS2.
 
-### Etapa 14
 
-Separação da investigação de `PROFILE` e `TRACKMAP`.
+## Histórico de etapas
 
-- `PROFILE` mostrou forte evidência de trabalhar no domínio dos índices da paleta, com `-1` como valor especial.
-- O segundo campo de todos os comandos de nível superior `TRACKMAP` é estritamente positivo e foi modelado provisoriamente como `magnitude`, sem assumir que seja distância.
-- Os opcodes `0..7` foram caracterizados por número de campos e faixas numéricas.
-- Foi criado `SEGMENT_STREAMS.json`, uma representação reversível dos segmentos com magnitude, subtipo, comandos aninhados e magnitude acumulada.
-- Nenhum opcode recebeu ainda uma semântica geométrica definitiva.
+### Etapa 14 — modelo matemático intermediário
 
-A próxima etapa deve localizar no executável as operações que transformam `(opcode, magnitude, subtype)` em estado geométrico da pista.
+`PROFILE` foi separado de `TRACKMAP`; `PROFILE` apresenta valores compatíveis com índices de paleta e `TRACKMAP` foi normalizado em segmentos com `opcode`, `magnitude`, `subtype` e registros nested. A semântica final ainda permaneceu aberta.
+
+### Etapa 15 — core geométrico vs. sideband
+
+Os pares `TRACK1/11` ... `TRACK6/16` foram comparados ignorando inicialmente os registros nested. A estabilidade do core (`opcode + magnitude + subtype`) e a maior variabilidade do nested fornecem evidência forte para tratá-los como camadas distintas. A semântica dos opcodes ainda não foi nomeada.
+
+Arquivos principais da etapa: `GEOMETRY_CORE_STREAM.csv`, `GEOMETRY_CORE_STREAMS.json`, `OPCODE_MORPHOLOGY.csv` e `PAIRED_TRACK_CORE_COMPARISON.csv`.
