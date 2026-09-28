@@ -1,6 +1,0 @@
-anchor,string_file_offset,cs_relative_offset,form,hit_file_offset
-data\ghini.run,0x23be0,0x4ac0,NO_COMMON_IMMEDIATE_XREF,
-PROFILE,0x23bfc,0x4adc,NO_COMMON_IMMEDIATE_XREF,
-Error before PROFILE,0x23c08,0x4ae8,NO_COMMON_IMMEDIATE_XREF,
-TRACKMAP,0x23c20,0x4b00,mov_ax,0x1f0e9
-Error before TRACKMAP,0x23c2c,0x4b0c,NO_COMMON_IMMEDIATE_XREF,
