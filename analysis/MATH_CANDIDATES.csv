@@ -1,0 +1,7 @@
+address,pattern,candidate_role,status,evidence_note
+0x1C231,shift x4 + MUL,possible address/scale computation,CANDIDATE,Observed machine arithmetic only; no demonstrated path from TRACKMAP.
+0x1EE5B,two MUL + additions,arithmetic helper candidate,CANDIDATE,Observed machine arithmetic; data-flow to track state is unproven.
+0x1FCB9,MUL chain + fixed subtraction,numeric conversion/helper candidate,CANDIDATE,Observed machine arithmetic; data-flow to track state is unproven.
+0x21244-0x2138B,repeated MUL + ADC accumulation,multiword arithmetic/helper,CANDIDATE,Looks like large-integer helper code; no proven TRACKMAP input.
+0x21448-0x214B9,DIV/MUL + iterative accumulation,division/normalization helper,CANDIDATE,No established caller/data-flow from TRACKMAP.
+0x2231B-0x22350,MUL/DIV + bit shifts,numeric algorithm/helper,CANDIDATE,No established caller/data-flow from TRACKMAP.
