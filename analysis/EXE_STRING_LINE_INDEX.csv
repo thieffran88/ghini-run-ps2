@@ -1,0 +1,170 @@
+file_offset,length,line,text
+145408,11,2404, 'GHINI RUN
+145424,24,2420,(c) Marcus Kasumba 2002 
+145456,11,2452,Version 1.2
+145472,12,2468,soundsys.cfg
+145488,26,2484,Please run SETUP.EXE first
+145518,17,2514,Allocating EMS.. 
+145540,6,2536,FAILED
+145550,59,2546,WARNING - Performance may be severely affected without EMS!
+145614,2,2610,OK
+145620,19,2616,Install keyboard.. 
+145644,15,2640,Extract GFX... 
+145664,14,2660,data\ghini.dat
+145682,24,2678,File GHINI.DAT not found
+145710,11,2706,Load GFX.. 
+145726,19,2722,Initialise sound.. 
+145750,3,2746,N/A
+145758,11,2754,Retrying.. 
+145774,5,2770,Error
+145784,14,2780,Init timers...
+145802,17,2798,Reseting hiscores
+145824,10,2820,data\ghini
+145838,14,2834,race complete`
+145856,7,2852,BONUS +
+145868,17,2864,new car unlocked`
+145890,11,2886,new record`
+145906,12,2902,game aborted
+145922,10,2918,time over`
+145936,40,2932,Shutting down - this may take a moment..
+145980,21,2976,ERROR CLOSING ARCHIVE
+146006,10,3002,Select car
+146020,5,3016,ACCEL
+146030,5,3026,SPEED
+146040,5,3036,HANDL
+146050,5,3046,TYRES
+146060,5,3056,BRAKE
+146070,14,3066,not available`
+146092,1,3088,0
+146098,15,3094,data\config.dat
+146138,5,3134,Track
+146148,16,3144,congratulations`
+146168,21,3164,shotgun run complete`
+146194,19,3190,new track available
+146218,6,3214,enjoy 
+146228,1,3224,`
+146234,7,3230,ENDLIST
+146246,3,3242,357
+146254,4,3250,2002
+146262,8,3258,data\end
+146282,17,3278,Load music data..
+146304,5,3300,data\
+146314,4,3310,.mo3
+146330,1,3326,%
+146336,15,3332,Load SFX data..
+146360,4,3356,.mp3
+146368,4,3364,.wav
+146376,11,3372,GFX ERROR @
+146400,14,3396,data\ghini.run
+146418,5,3414,TRACK
+146428,7,3424,PROFILE
+146440,20,3436,Error before PROFILE
+146464,8,3460,TRACKMAP
+146476,21,3472,Error before TRACKMAP
+146502,22,3498,Please enter your name
+146528,1,3524, 
+146534,6,3530,PLAYER
+146544,12,3540,level rookie
+146560,12,3556,level normal
+146576,9,3572,level pro
+146590,14,3586,speed slowpoke
+146608,12,3604,speed normal
+146624,11,3620,speed turbo
+146640,13,3636,speed turbo x
+146658,14,3654,speed turbo xx
+146676,15,3672,speed turbo xxx
+146696,10,3692,vsync a on
+146710,10,3706,vsync b on
+146724,9,3720,vsync off
+146738,14,3734,sfx lag normal
+146756,12,3752,sfx lag high
+146772,6,3768,paused
+146782,14,3778,AMATEUR TROPHY
+146800,16,3796,INTERMEDIATE CUP
+146820,12,3816,PRO SUPERCUP
+146836,11,3832,shotgun run
+146852,24,3848,top  qualify each stage`
+146880,7,3876,pursuit
+146892,21,3888,run those lawbreakers
+146918,13,3914,off the road`
+146936,6,3932,POINTS
+146946,7,3942,PRANG :
+146958,7,3954,CRASH :
+146970,7,3966,FLIP  :
+146982,18,3978,BONUS :     x TIME
+147012,12,4008,race results
+147028,9,4024,RACE TIME
+147042,5,4038,SCORE
+147052,9,4048,MAX SPEED
+147066,4,4062, MPH
+147074,9,4070,GAME TYPE
+147088,9,4084,NEXT RACE
+147102,10,4098,QUALIFIED!
+147116,9,4112,GAME OVER
+147130,6,4126,T.B.A.
+147140,15,4136,data\record.dat
+147160,15,4156,data\record.tmp
+147180,15,4176,1959991ghinirun
+147200,15,4196,0010009ghinirun
+147232,8,4228, Records
+147264,13,4260,Select course
+147282,6,4278,ROOKIE
+147292,6,4288,NORMAL
+147302,3,4298,PRO
+147310,12,4306,TRACK RECORD
+147326,10,4322,DIFFICULTY
+147344,18,4340,SOUNDSYS\DS4QB.QBW
+147366,18,4362,SOUNDSYS\DS4QB.VCW
+147388,18,4384,SOUNDSYS\DS4QB.QBS
+147410,18,4406,SOUNDSYS\DS4QB.VCS
+147458,12,4454,SOUNDSYS.CFG
+147474,20,4470,SOUNDSYS\DS4QBXX.EXE
+147498,18,4494,SOUNDSYS\START.EXE
+147520,17,4516,SOUNDSYS\BASS.DLL
+147542,16,4538,SOUNDSYS\OGG.DLL
+147562,19,4558,SOUNDSYS\VORBIS.DLL
+147586,16,4582,CD SOUNDSYS >NUL
+147606,26,4602,START.EXE DS4QBXX.EXE >NUL
+147636,9,4632,CD.. >NUL
+147658,4,4654,..\\
+147666,3,4662,MP3
+147674,3,4670,OGG
+147718,4,4714,.pal
+147744,61,4740,DirectQB v1.61 by Angelo Mottola - Enhanced Creations 1998-99
+147844,2,4840,:\
+147850,8,4846,TEMP.FQB
+147878,3,4874,RPG
+147886,15,4882,Unknown Host OS
+147906,7,4902,DOS 1.0
+147918,3,4914,DOS
+147926,1,4922,.
+147932,8,4928,OS/2 1.0
+147944,8,4940,OS/2 2.0
+147956,10,4952,OS/2 Warp3
+147970,10,4966,OS/2 Warp4
+147984,8,4980,OS/2 2.1
+147996,10,4992,Windows NT
+148010,10,5006,Windows 95
+148024,10,5020,Windows 98
+148038,3,5034,WRK
+148046,3,5042,FBF
+148923,34,2611," ""Coastal road consisting of long "
+148967,34,2612," ""curves. High speed course, prone"
+149067,34,2616," ""Medieval site long since overgro"
+149112,34,2617," ""wild orchards and flowers. Bewar"
+149213,34,2621," ""A race through the winding stree"
+149256,34,2622," ""Saint George City. Keep an eye o"
+149345,34,2626," ""Tropical course famous for spect"
+149389,34,2627," ""evening sunset. Road surface is "
+149486,34,2631," ""The beautiful scenery hides a to"
+149527,34,2632," ""path through the Falls. Beware, "
+149629,34,2636," ""Notoriously difficult road winds"
+149667,34,2637," ""through the mountains, and is no"
+149711,34,2638," ""only attemped in Off-Road vehcle"
+149751,34,2639," ""a game by"",""marcus kasumba     """
+149843,34,2642," ""game code and graphics"",""marcus "
+149958,34,2645," ""directqb ems and keyboard"",""ange"
+150039,34,2647," ""direct sound for qbpp"",""chris ad"
+150124,34,2649," ""testing"",""plasma   "",""357"","""","""""
+150299,34,2653," ""ghini run"",catch me if you can`"""
+150437,1,19781,M
