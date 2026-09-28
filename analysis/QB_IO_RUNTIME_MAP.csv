@@ -1,0 +1,9 @@
+address,operation,evidence
+0x17ef7,DOS OPEN,AH=3Dh; helper opens device/filename at DS:DX
+0x17f48,DOS WRITE,AH=40h; one-byte write helper
+0x18e41,DOS LSEEK,AH=42h; stream position management
+0x18f7d,DOS WRITE,AH=40h; stream write path
+0x19062,DOS READ,AH=3Fh; stream read path
+0x1908e,DOS WRITE,AH=40h; stream flush/write path
+0x1909e,DOS CLOSE,AH=3Eh; stream close path
+0x1926c,DOS OPEN,AH=3Dh; higher-level stream open
