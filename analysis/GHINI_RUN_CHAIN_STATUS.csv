@@ -1,0 +1,10 @@
+step,location,evidence,conclusion,status
+1,0x23BE4,"literal data\\ghini.run",application source anchor exists,CONFIRMED
+2,0x23C0C,"Error before PROFILE",PROFILE source anchor exists,CONFIRMED
+3,0x23C24,"TRACKMAP literal",TRACKMAP source anchor exists,CONFIRMED
+4,0x19356,"indirect runtime dispatcher",file operations are hidden behind dispatch,CONFIRMED
+5,0x1944B,"current-stream character input",text parsing can consume stream data,CONFIRMED
+6,0x1E62E,"quote/comma/CR/LF parser",does not match Ghini.run grammar,REJECTED_AS_GHINI_RUN_PARSER
+7,0x1E5A0,"buffered CX-byte read",candidate generic binary/block-read path,STRONG
+8,application->open->read,"no surviving direct edge from literal to application call in available artifacts",exact Ghini.run call chain remains unresolved,OPEN
+9,PROFILE/TRACKMAP->memory,"no proven destination structure",semantic storage location remains unresolved,OPEN

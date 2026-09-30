@@ -17,13 +17,9 @@
 
 ## Estado atual
 
-**Etapa 15 --- separação do `TRACKMAP` em core geométrico e sideband
-nested.**
+**Etapa 22 --- fronteira do Stream API e data-flow do loader.**
 
-A estrutura dos dados de pista já está bem caracterizada, mas a
-semântica final dos opcodes ainda não deve ser considerada resolvida. O
-próximo alvo é ligar os registros de `TRACKMAP` às variáveis e rotinas
-que controlam a geometria da pista durante a corrida.
+O runtime QuickBASIC e o dispatcher de I/O já estão caracterizados. A investigação agora separa leitura de stream, parser textual genérico e o parser específico de `Ghini.run`. A ligação exata entre `data\\ghini.run` e as estruturas internas `PROFILE`/`TRACKMAP` ainda está aberta.
 
 ### Legenda de evidência
 
@@ -333,54 +329,33 @@ Essa rejeição faz parte do histórico e deve permanecer documentada.
 
 # 12. Etapas do projeto
 
-  ----------------------------------------------------------------------------
-                         Etapa Tema                      Estado
-  ---------------------------- ------------------------- ---------------------
-                             1 Inventário/radiografia    CONCLUÍDO
-
-                             2 Decodificação inicial GET CONCLUÍDO
-
-                             3 Decodificação dos 182     CONCLUÍDO
-                               assets                    
-
-                             4 Análise das tails         CONCLUÍDO
-
-                             5 Análise do                CONCLUÍDO
-                               loader/executável         
-
-                             6 Camada canônica de assets CONCLUÍDO
-
-                             7 Renderer independente     CONCLUÍDO
-
-                             8 Pipeline estrutural de    CONCLUÍDO
-                               pista                     
-
-                             9 Estrutura                 CONCLUÍDO
-                               PROFILE/TRACKMAP          
-
-                            10 Busca de                  CONCLUÍDO
-                               interpretadores/opcodes   
-
-                            11 Data-flow e rejeição de   CONCLUÍDO
-                               falso positivo            
-
-                            12 Âncoras do loader         CONCLUÍDO
-
-                            13 Semântica estrutural      CONCLUÍDO
-                               conservadora              
-
-                            14 Próximo: data-flow dos    PLANEJADO
-                               registros até a           
-                               física/renderização       
-
-                           15+ Reconstrução do modelo de PLANEJADO
-                               corrida                   
-
-                           20+ Reimplementação jogável   PLANEJADO
-
-                        Futuro Investigação de           PLANEJADO
-                               portabilidade PS2         
-  ----------------------------------------------------------------------------
+| Etapa | Tema | Estado |
+|---:|---|---|
+| 1 | Inventário/radiografia | CONCLUÍDO |
+| 2 | Decodificação inicial GET | CONCLUÍDO |
+| 3 | Decodificação dos 182 assets | CONCLUÍDO |
+| 4 | Análise das tails | CONCLUÍDO |
+| 5 | Análise do loader/executável | CONCLUÍDO |
+| 6 | Camada canônica de assets | CONCLUÍDO |
+| 7 | Renderer independente | CONCLUÍDO |
+| 8 | Pipeline estrutural de pista | CONCLUÍDO |
+| 9 | Estrutura PROFILE/TRACKMAP | CONCLUÍDO |
+| 10 | Busca de interpretadores/opcodes | CONCLUÍDO |
+| 11 | Data-flow e rejeição de falso positivo | CONCLUÍDO |
+| 12 | Âncoras do loader | CONCLUÍDO |
+| 13 | Semântica estrutural conservadora | CONCLUÍDO |
+| 14 | Modelo matemático intermediário | CONCLUÍDO |
+| 15 | Core geométrico vs. sideband | CONCLUÍDO |
+| 16 | Candidatos matemáticos no executável | CONCLUÍDO |
+| 17 | Correção de falso parser e data-flow | CONCLUÍDO |
+| 18 | Fingerprinting do loader/I/O | CONCLUÍDO |
+| 19 | Dispatcher do runtime QuickBASIC | CONCLUÍDO |
+| 20 | Mapeamento do dispatcher | CONCLUÍDO |
+| 21 | Fronteira aplicação/runtime | CONCLUÍDO |
+| 22 | Stream API e call-chain | CONCLUÍDO |
+| 23+ | Proveniência de `Ghini.run` até PROFILE/TRACKMAP | PRÓXIMO |
+| Futuro | Reimplementação jogável | PLANEJADO |
+| Futuro | Investigação de portabilidade PS2 | PLANEJADO |
 
 ------------------------------------------------------------------------
 
@@ -600,7 +575,109 @@ esses valores até o primeiro uso matemático verificável.
 - **Próximo foco:** seguir tabelas/calls indiretos que conectam o código do programa às rotinas de arquivo, buscando finalmente o fluxo `open -> read -> parse -> PROFILE/TRACKMAP`.
 
 Artefatos desta etapa: `/mnt/data/GhiniRun_stage18_loader_dataflow/` e `GhiniRun_stage18_loader_dataflow.zip`.
+# 18. Próximo marco técnico
 
-## Estado do projeto — Etapa 21
+O objetivo de curto prazo é demonstrar a cadeia: 
 
-A Etapa 21 refinou o data-flow do runtime QuickBASIC. O dispatcher `0x19356`, os caminhos de leitura `0x1E5A0`/`0x1944B` e o scanner genérico `0x1E62E` foram separados da hipótese de parser de `Ghini.run`. A cadeia completa `data\ghini.run → parser PROFILE/TRACKMAP` ainda permanece aberta. Ver `docs/ENGINEERING_PHASE21.md` e `analysis/CALLCHAIN_FINDINGS.csv`.
+```text
+data\\ghini.run
+      ↓
+abertura/stream
+      ↓
+leitura
+      ↓
+parser específico
+      ↓
+PROFILE / TRACKMAP
+      ↓
+estruturas em memória
+```
+
+Somente depois disso será atribuída semântica aos campos e conectada a
+matemática de geometria/renderização.
+
+------------------------------------------------------------------------
+
+# 19. Histórico técnico
+
+## Etapas 14–16 — dados de pista e matemática
+
+### Etapa 14
+
+`PROFILE` foi separado de `TRACKMAP`; `TRACKMAP` foi normalizado em
+segmentos com `opcode`, `magnitude`, `subtype` e registros nested. Os
+valores de `PROFILE` e as comparações entre pistas forneceram evidência
+estrutural, mas não semântica final.
+
+### Etapa 15
+
+Os pares `TRACK1/11` ... `TRACK6/16` foram comparados separando o core
+(`opcode + magnitude + subtype`) dos registros nested. O core mostrou
+maior estabilidade relativa; a semântica funcional dos opcodes permaneceu
+aberta.
+
+### Etapa 16
+
+Foram isolados blocos aritméticos no EXE em `0x1C231`, `0x1EE5B`,
+`0x1FCB9`, `0x21244–0x2138B`, `0x21448–0x214B9` e `0x2231B–0x22350`.
+Nenhum foi promovido a matemática da pista sem data-flow demonstrado.
+
+## Etapa 17 — correção de falso positivo
+
+A rotina `0x1D787` foi demonstrada como formatação/conversão decimal, não
+como parser de `Ghini.run`. Essa correção eliminou uma linha de investigação
+enganosa.
+
+## Etapa 18 — loader/data-flow fingerprinting
+
+Foram confirmadas as camadas DOS/QB de `OPEN`, `READ`, `WRITE`, `LSEEK` e
+`CLOSE`. As âncoras de `data\\ghini.run`, `PROFILE`, `TRACKMAP` e mensagens
+de erro foram preservadas como evidência de código-fonte.
+
+## Etapa 19 — runtime QuickBASIC
+
+Foi caracterizado o dispatcher `0x19356` e sua relação com o estado de
+stream. A investigação passou a considerar o runtime como uma camada
+intermediária, em vez de esperar chamadas diretas da aplicação para
+`INT 21h`.
+
+## Etapa 20 — mapa do dispatcher
+
+`DS:[360C]` foi identificado como ponte para uma tabela usada pelo
+dispatcher. `0x1944B` foi caracterizado como leitura de caractere do
+stream corrente. A atribuição de qualquer slot da tabela ao `Ghini.run`
+continua não confirmada.
+
+## Etapa 21 — fronteira aplicação/runtime
+
+Foi isolada a região de entrada da aplicação em torno de `0x1D888` e
+comparada com as rotinas de runtime. Também foi rejeitado o helper textual
+genérico `0x1E62E` como parser de `Ghini.run`, pois sua gramática verifica
+aspas, vírgulas, CR e LF, incompatível com o arquivo observado.
+
+## Etapa 22 — Stream API e call-chain
+
+A etapa atual classificou os callers conhecidos de `0x19356`: wrappers de
+stream, leitura em bloco e parser textual genérico. `0x1E5A0` foi elevado a
+candidato forte para uma leitura bruta/em bloco, mas ainda não foi ligado
+provenientemente a `data\\ghini.run`.
+
+### Estado da evidência
+
+- **CONFIRMADO:** dispatcher indireto `0x19356`.
+- **CONFIRMADO:** leitura de caractere `0x1944B`.
+- **CONFIRMADO:** helper de abertura DOS em `0x17EF7`.
+- **CONFIRMADO:** `0x1E62E` é parser genérico delimitado.
+- **FORTE:** `0x1E5A0` é caminho de leitura em bloco.
+- **ABERTO:** argumento/stream específico correspondente a `data\\ghini.run`.
+- **ABERTO:** destino em memória dos registros `PROFILE` e `TRACKMAP`.
+
+------------------------------------------------------------------------
+
+# 20. Princípio do projeto
+
+> **Reconstruir primeiro. Interpretar depois. Confirmar antes de afirmar.**
+
+A meta é uma reconstrução tecnicamente explicável, reproduzível e fiel o
+suficiente para servir de base à reimplementação e, posteriormente, à
+investigação da portabilidade para PS2.

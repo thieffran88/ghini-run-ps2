@@ -1,0 +1,8 @@
+caller,target,selector_or_mode,observed_behavior,classification,evidence_status
+17e17,19356,AH inherited,"small helper dispatches current stream operation through runtime table",runtime stream wrapper,CONFIRMED
+17eb6,19356,AH=0x0A,"prepares ES:DI buffer, sets DS:3AF8/3AFA, then dispatches",buffered stream operation,CONFIRMED
+19467,19356,AH=0x10,"character input from current stream",single-character input,CONFIRMED
+1948b,19356,AH=0x12,"stream operation selected by AH",runtime stream operation,CONFIRMED
+1e5a0,19356,AH=0x04A? via AX=0x0A04,"reads CX bytes through current stream and stores into ES:DI",buffered block read,STRONG
+1e6c9,19356,AH=0x0E,"text parser helper eventually dispatches stream operation",generic text parser path,CONFIRMED
+1e62e,1944b,n/a,"reads characters, skips spaces, checks quote/comma/CR/LF",generic delimiter parser,CONFIRMED

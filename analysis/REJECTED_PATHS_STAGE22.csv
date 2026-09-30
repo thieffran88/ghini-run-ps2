@@ -1,0 +1,5 @@
+path,reason
+0x1E62E as Ghini.run parser,"grammar checks commas, quotes and CR/LF; Ghini.run has 0 commas and 0 quote characters and is indentation/whitespace based"
+0x1D787 as Ghini.run parser,"decimal formatting/conversion routine previously rejected in Stage 17"
+0x5461-0x5667 as TRACKMAP interpreter,"no source-read/provenance edge from Ghini.run values"
+raw INT 21h xrefs as application loader,"QuickBASIC runtime indirection prevents direct syscall xrefs from proving application provenance"
