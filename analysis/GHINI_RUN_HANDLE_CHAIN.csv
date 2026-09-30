@@ -1,0 +1,6 @@
+from,to,address,interpretation,status
+application,runtime stream selector,0x1E5D2 / 0x1EA4C,OPEN/stream object boundary candidate,OPEN
+stream object,current stream global,0x40C3,SI stored here before read operations,CONFIRMED
+current stream,bulk read,0x1E550,reads into caller buffer using 0x19356/0x1944B,STRONG
+current stream,character read,0x1944B,dispatches read operation AH=10h,CONFIRMED
+string pool,Ghini.run consumer,unknown,no definitive descriptor-to-caller xref yet,OPEN
