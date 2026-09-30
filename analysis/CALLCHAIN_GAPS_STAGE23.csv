@@ -1,0 +1,7 @@
+edge,what_is_needed,current_evidence,next_test,status
+filename_literal_to_OPEN,"xref from application string object to open helper",source-line anchor only,"recover QB string descriptor/object reference and trace its consumer",OPEN
+OPEN_to_stream_state,"identify stream object/handle initialized for Ghini.run",runtime open helper + handle in BX,"trace returned handle into runtime stream table",OPEN
+stream_state_to_1E550,"identify application caller of generic block reader",0x1E550 runtime body,"enumerate all callers and classify argument construction",OPEN
+reader_to_line_parser,"find routine consuming returned bytes as Ghini.run text",no proven edge,"search callers for ASCII integer/whitespace loops",OPEN
+line_parser_to_PROFILE,"find storage destination after PROFILE marker",literal only,"trace writes following marker comparison",OPEN
+line_parser_to_TRACKMAP,"find storage destination after TRACKMAP marker",literal only,"trace writes following marker comparison",OPEN

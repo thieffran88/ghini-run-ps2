@@ -1,0 +1,10 @@
+feature,observed_in_Ghini_run,compatible_with_generic_char_reader,compatible_with_0x1E62E,notes
+ASCII numeric fields,yes,yes,unknown,"many integer tokens"
+spaces between numeric fields,yes,yes,yes,"whitespace-delimited"
+TAB indentation,yes,yes,no_evidence,"nested records visibly indented"
+PROFILE marker,yes,yes,no,"literal marker"
+TRACKMAP marker,yes,yes,no,"literal marker"
+comma delimiters,no,yes,no,"no comma grammar observed"
+quoted fields,no,yes,yes,"not observed"
+CR/LF line termination,yes,yes,yes,"file text"
+9999 terminator,yes,yes,possible,"structural terminator in TRACKMAP"

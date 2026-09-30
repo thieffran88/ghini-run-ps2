@@ -1,0 +1,14 @@
+node,evidence,role,confidence,status
+0x23BE4,"literal data\\ghini.run", "application source anchor for filename",CONFIRMED,CONFIRMED
+0x23C00,"literal PROFILE", "application source anchor",CONFIRMED,CONFIRMED
+0x23C24,"literal TRACKMAP", "application source anchor",CONFIRMED,CONFIRMED
+0x19356,"selector from stream state + indirect vector", "QuickBASIC stream dispatcher",CONFIRMED,CONFIRMED
+0x1944B,"AH=10 path through 0x19356", "character input wrapper",CONFIRMED,CONFIRMED
+0x1E550,"buffered/block read routine; calls 0x19356 with AX=0x0A04 or character path", "generic stream block reader",STRONG,CONFIRMED
+0x1E5A0,"inside 0x1E550 block-read branch", "runtime implementation detail, not application parser",CONFIRMED,CONFIRMED
+0x1E62E,"quote/comma/CR/LF handling", "generic delimiter parser",CONFIRMED,REJECTED_AS_GHINI_RUN_PARSER
+0x17EF7,"INT 21h AH=3Dh open; handle returned in BX", "low-level open helper",CONFIRMED,CONFIRMED
+0x23BE4->0x17EF7,"no surviving direct xref in repository artifacts", "application-to-open edge",OPEN,UNRESOLVED
+0x17EF7->0x1E550,"runtime relationship inferred from API layering only", "open-to-read edge",HYPOTHESIS,UNRESOLVED
+0x1E550->PROFILE,"no proven destination/consumer", "semantic parser edge",OPEN,UNRESOLVED
+0x1E550->TRACKMAP,"no proven destination/consumer", "semantic parser edge",OPEN,UNRESOLVED
