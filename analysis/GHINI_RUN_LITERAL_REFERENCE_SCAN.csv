@@ -1,0 +1,6 @@
+literal,physical_offset,low_word_le_hits,low_word_be_hits,conclusion
+data\ghini.run,0x23be4,,,No direct physical-offset xref; low-word hits are not sufficient to identify QB string descriptor
+Error before PROFILE,0x23c0c,0x1c852;0x1db99;0x1f94b,0x1d91b,No direct physical-offset xref; low-word hits are not sufficient to identify QB string descriptor
+PROFILE,0x23c19,,,No direct physical-offset xref; low-word hits are not sufficient to identify QB string descriptor
+TRACKMAP,0x23c3d,,0x19fd9;0x19fe9;0x1a022;0x1a05d;0x1a074;0x1a0e2;0x1a10c;0x1abee;0x1b53e;0x1c912;0x2689f;0x268a7,No direct physical-offset xref; low-word hits are not sufficient to identify QB string descriptor
+Error before TRACKMAP,0x23c2c,,0x187f1;0x1c090;0x1dd16;0x1e695;0x1e6a2,No direct physical-offset xref; low-word hits are not sufficient to identify QB string descriptor
