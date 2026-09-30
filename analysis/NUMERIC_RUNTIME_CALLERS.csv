@@ -1,0 +1,17 @@
+asm_line,instruction,classification
+50549,1f835:	e8 8a 00             	call   0x1f8c2,runtime-internal
+50553,1f845:	e8 b8 00             	call   0x1f900,runtime-internal
+50602,1f8c2:	e8 a2 02             	call   0x1fb67,runtime-internal
+50607,1f8cb:	e8 ad 02             	call   0x1fb7b,runtime-internal
+50610,1f8d2:	e8 a6 02             	call   0x1fb7b,runtime-internal
+50634,1f90c:	e8 58 02             	call   0x1fb67,runtime-internal
+50640,1f91b:	e8 c2 02             	call   0x1fbe0,runtime-internal
+50658,1f943:	e8 9a 02             	call   0x1fbe0,runtime-internal
+50679,1f972:	e8 f2 01             	call   0x1fb67,runtime-internal
+50848,1faeb:	e8 79 00             	call   0x1fb67,runtime-internal
+50853,1faf4:	e8 84 00             	call   0x1fb7b,runtime-internal
+50856,1fafb:	e8 7d 00             	call   0x1fb7b,runtime-internal
+50892,1fb4a:	e8 2e 00             	call   0x1fb7b,runtime-internal
+50905,1fb67:	e8 76 00             	call   0x1fbe0,runtime-internal
+50917,1fb7b:	e8 62 00             	call   0x1fbe0,runtime-internal
+50945,1fbb9:	e8 24 00             	call   0x1fbe0,runtime-internal
